@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Us — J.C.I. Cables (India)</title>
+<meta name="description" content="Contact Us manufacturer and supplier from New Delhi, India. Contact J.C.I. Cables India.">
+<style>
+:root{--navy:#1a2e4a;--gold:#e8920a;--gold-light:#f5a623;--gray:#f8f9fa;--text:#333;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Segoe UI',sans-serif;color:var(--text);background:#fff;}
+a{text-decoration:none;color:inherit;}
+
+/* Header */
+header{background:var(--navy);position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.3);}
+.header-top{display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:70px;}
+.logo{display:flex;align-items:center;gap:12px;}
+.logo-icon{width:48px;height:48px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;color:#fff;}
+.logo-text h1{font-size:20px;color:#fff;font-weight:700;line-height:1.2;}
+.logo-text span{font-size:11px;color:rgba(255,255,255,0.65);letter-spacing:1px;text-transform:uppercase;}
+.header-contact{color:rgba(255,255,255,0.85);font-size:13px;text-align:right;}
+.header-contact strong{color:var(--gold);}
+
+nav{background:rgba(0,0,0,0.2);border-top:1px solid rgba(255,255,255,0.08);}
+nav ul{display:flex;list-style:none;padding:0 40px;}
+nav ul li a{display:block;padding:12px 16px;color:rgba(255,255,255,0.88);font-size:13px;font-weight:500;letter-spacing:0.3px;transition:color 0.2s,background 0.2s;}
+nav ul li a:hover,nav ul li a.active{color:var(--gold);background:rgba(232,146,10,0.12);}
+.nav-home a{font-weight:700;}
+
+/* Hero */
+.page-hero{background:linear-gradient(135deg,var(--navy) 0%,#243d5c 100%);padding:48px 40px;display:flex;align-items:center;gap:48px;min-height:240px;}
+.hero-text{flex:1;}
+.hero-text .eyebrow{color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:8px;}
+.hero-text h2{font-size:32px;color:#fff;font-weight:700;margin-bottom:12px;line-height:1.2;}
+.hero-text p{color:rgba(255,255,255,0.75);font-size:15px;line-height:1.6;max-width:560px;}
+.hero-text .hero-btns{margin-top:20px;display:flex;gap:12px;}
+.btn-gold{background:var(--gold);color:#fff;padding:11px 24px;border-radius:4px;font-weight:600;font-size:14px;transition:background 0.2s;}
+.btn-gold:hover{background:var(--gold-light);}
+.btn-outline{border:2px solid rgba(255,255,255,0.4);color:#fff;padding:10px 22px;border-radius:4px;font-size:14px;transition:border-color 0.2s;}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);}
+.hero-img{width:200px;height:200px;object-fit:cover;border-radius:8px;border:3px solid rgba(255,255,255,0.15);flex-shrink:0;}
+
+/* Product grid */
+.section{padding:48px 40px;}
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;}
+.section-title{font-size:22px;font-weight:700;color:var(--navy);}
+.section-title span{color:var(--gold);}
+.product-count{background:var(--gold);color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;margin-left:10px;}
+
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px;}
+.product-card{border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;transition:box-shadow 0.2s,transform 0.2s;background:#fff;}
+.product-card:hover{box-shadow:0 8px 24px rgba(0,0,0,0.12);transform:translateY(-2px);}
+.product-card img{width:100%;height:180px;object-fit:cover;background:#f3f4f6;}
+.product-card-body{padding:14px;}
+.product-card h3{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.3;}
+.product-price{color:var(--gold);font-weight:700;font-size:15px;margin-bottom:10px;}
+.product-price span{font-size:11px;color:#888;font-weight:400;}
+.btn-quote{width:100%;background:var(--navy);color:#fff;border:none;padding:9px;border-radius:4px;font-size:13px;font-weight:600;cursor:pointer;transition:background 0.2s;}
+.btn-quote:hover{background:var(--gold);}
+
+/* Why JCI */
+.why-section{background:var(--gray);padding:56px 40px;}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:24px;margin-top:28px;}
+.why-card{background:#fff;border-radius:8px;padding:24px;border-left:4px solid var(--gold);box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+.why-card h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+.why-card p{font-size:13px;color:#666;line-height:1.6;}
+.why-icon{font-size:28px;margin-bottom:12px;}
+
+/* Categories grid (home) */
+.categories{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-top:28px;}
+.cat-card{background:var(--navy);border-radius:8px;padding:24px 20px;text-align:center;color:#fff;transition:background 0.2s;border:2px solid transparent;}
+.cat-card:hover{background:#243d5c;border-color:var(--gold);}
+.cat-card .cat-icon{font-size:32px;margin-bottom:10px;}
+.cat-card h3{font-size:15px;font-weight:600;}
+.cat-card span{font-size:12px;color:rgba(255,255,255,0.6);}
+
+/* Contact / Footer */
+.contact-strip{background:var(--gold);padding:28px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.contact-strip h3{color:#fff;font-size:20px;font-weight:700;}
+.contact-strip p{color:rgba(255,255,255,0.9);font-size:14px;}
+.btn-white{background:#fff;color:var(--gold);padding:12px 28px;border-radius:4px;font-weight:700;font-size:14px;transition:opacity 0.2s;}
+.btn-white:hover{opacity:0.9;}
+
+footer{background:var(--navy);color:rgba(255,255,255,0.75);padding:48px 40px 24px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:32px;}
+.footer-brand p{font-size:13px;line-height:1.7;margin-top:10px;max-width:280px;}
+.footer-col h4{color:#fff;font-size:14px;font-weight:700;margin-bottom:14px;text-transform:uppercase;letter-spacing:0.5px;}
+.footer-col ul{list-style:none;}
+.footer-col ul li{margin-bottom:8px;}
+.footer-col ul li a{font-size:13px;color:rgba(255,255,255,0.65);transition:color 0.2s;}
+.footer-col ul li a:hover{color:var(--gold);}
+.footer-contact p{font-size:13px;margin-bottom:6px;display:flex;align-items:flex-start;gap:8px;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.4);}
+.gst-badge{background:rgba(255,255,255,0.08);padding:3px 10px;border-radius:4px;font-size:11px;}
+
+/* Hero home */
+.home-hero{background:linear-gradient(135deg,var(--navy) 0%,#1e3a5f 50%,#243d5c 100%);min-height:500px;display:flex;align-items:center;padding:60px 40px;gap:60px;}
+.home-hero-text h1{font-size:42px;color:#fff;font-weight:800;line-height:1.15;margin-bottom:16px;}
+.home-hero-text h1 span{color:var(--gold);}
+.home-hero-text p{color:rgba(255,255,255,0.75);font-size:17px;line-height:1.6;max-width:520px;margin-bottom:28px;}
+.hero-stats{display:flex;gap:32px;margin-top:32px;}
+.stat{text-align:center;}
+.stat .num{font-size:28px;font-weight:800;color:var(--gold);}
+.stat .lbl{font-size:12px;color:rgba(255,255,255,0.6);margin-top:2px;}
+.home-hero-imgs{display:flex;flex-direction:column;gap:12px;flex-shrink:0;}
+.home-hero-imgs img{width:180px;height:120px;object-fit:cover;border-radius:6px;border:2px solid rgba(255,255,255,0.15);}
+
+/* Responsive */
+@media(max-width:768px){
+  .header-top,.nav ul,.page-hero,.home-hero,.footer-grid,.contact-strip{flex-direction:column;padding:20px;}
+  nav ul{flex-wrap:wrap;}
+  .home-hero-imgs{display:none;}
+  .footer-grid{grid-template-columns:1fr;}
+  .hero-img{display:none;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">JCI</div>
+      <div class="logo-text">
+        <h1>J.C.I. Cables (India)</h1>
+        <span>Manufacturer &amp; Exporter · New Delhi</span>
+      </div>
+    </a>
+    <div class="header-contact">
+      <div><strong>📞 9350044165</strong></div>
+      <div>A-92, Wazirpur, New Delhi – 110052</div>
+      <div>GST: 07AAFPJ7469P1ZX</div>
+    </div>
+  </div>
+  <nav>
+    <ul><li class="nav-home"><a href="index.html">Home</a></li>
+<li><a href="coaxial-cables.html">Coaxial Cables</a></li>
+<li><a href="cctv-cable.html">CCTV Cables</a></li>
+<li><a href="rf-connectors.html">RF Connectors</a></li>
+<li><a href="antennas.html">Antennas</a></li>
+<li><a href="cable-connectors.html">Cable Connectors</a></li>
+<li><a href="connectors.html">Connectors</a></li>
+<li><a href="poe-switches.html">PoE Switches</a></li>
+<li><a href="cat-6-cable.html">CAT 6 Cable</a></li>
+</ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="hero-text">
+    <div class="eyebrow">J.C.I. Cables (India)</div>
+    <h2>Contact Us</h2>
+    <p>Get in touch for quotes, bulk orders, custom cable assemblies, or any product enquiry. We respond promptly.</p>
+  </div>
+</section>
+<section class="section">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
+    <div>
+      <h2 style="font-size:24px;color:var(--navy);margin-bottom:24px;">Get In Touch</h2>
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:44px;height:44px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">👤</div>
+          <div>
+            <div style="font-weight:700;color:var(--navy);">KS Jaiswal (Proprietor)</div>
+            <div style="color:#666;font-size:13px;">Proprietor, J.C.I. Cables (India)</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:44px;height:44px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">📞</div>
+          <div>
+            <div style="font-weight:700;color:var(--navy);"><a href="tel:9350044165" style="color:var(--gold);">9350044165</a></div>
+            <div style="color:#666;font-size:13px;">88% Response Rate · Call or WhatsApp</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:44px;height:44px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">📍</div>
+          <div>
+            <div style="font-weight:700;color:var(--navy);">A-92, Wazirpur, New Delhi - 110052, Delhi, India</div>
+            <div style="color:#666;font-size:13px;">Wazirpur Industrial Area, New Delhi</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:44px;height:44px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">🏛️</div>
+          <div>
+            <div style="font-weight:700;color:var(--navy);">GST: 07AAFPJ7469P1ZX</div>
+            <div style="color:#666;font-size:13px;">Registered · Delhi, India</div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="margin-top:36px;padding:24px;background:#f8f9fa;border-radius:8px;border-left:4px solid var(--gold);">
+        <h3 style="color:var(--navy);margin-bottom:8px;">Business Hours</h3>
+        <p style="font-size:14px;color:#555;line-height:1.7;">Monday – Saturday: 10:00 AM – 7:00 PM<br>Sunday: By appointment</p>
+      </div>
+    </div>
+    
+    <div style="background:#f8f9fa;border-radius:12px;padding:32px;">
+      <h2 style="font-size:22px;color:var(--navy);margin-bottom:6px;">Send Your Requirement</h2>
+      <p style="font-size:13px;color:#666;margin-bottom:24px;">Fill in the form and we'll get back to you with pricing.</p>
+      <form onsubmit="handleForm(event)">
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div>
+            <label style="font-size:13px;font-weight:600;color:var(--navy);display:block;margin-bottom:6px;">Your Name *</label>
+            <input type="text" required placeholder="Full Name" style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#e8920a'" onblur="this.style.borderColor='#ddd'">
+          </div>
+          <div>
+            <label style="font-size:13px;font-weight:600;color:var(--navy);display:block;margin-bottom:6px;">Phone / WhatsApp *</label>
+            <input type="tel" required placeholder="+91 XXXXX XXXXX" style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#e8920a'" onblur="this.style.borderColor='#ddd'">
+          </div>
+          <div>
+            <label style="font-size:13px;font-weight:600;color:var(--navy);display:block;margin-bottom:6px;">Product / Category</label>
+            <select style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;outline:none;background:#fff;">
+              <option value="">Select a Category</option>
+              <option>Coaxial Cables</option><option>CCTV Cables</option><option>RF Connectors</option><option>Antennas</option><option>Cable Connectors</option><option>Connectors</option><option>PoE Switches</option><option>CAT 6 Cable</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size:13px;font-weight:600;color:var(--navy);display:block;margin-bottom:6px;">Your Requirement *</label>
+            <textarea required rows="5" placeholder="Describe your requirement, quantity, specifications..." style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;outline:none;resize:vertical;transition:border-color 0.2s;" onfocus="this.style.borderColor='#e8920a'" onblur="this.style.borderColor='#ddd'"></textarea>
+          </div>
+          <button type="submit" class="btn-gold" style="width:100%;padding:13px;border:none;cursor:pointer;font-size:15px;border-radius:6px;">Send Enquiry →</button>
+        </div>
+      </form>
+      <div id="form-success" style="display:none;text-align:center;padding:20px;color:green;font-weight:600;">✅ Thank you! We will contact you shortly.</div>
+    </div>
+  </div>
+</section>
+<script>
+function handleForm(e){e.preventDefault();e.target.style.display='none';document.getElementById('form-success').style.display='block';}
+</script>
+
+<div class="contact-strip">
+  <div>
+    <h3>Get a Quote Today</h3>
+    <p>Call us or send your requirement — we respond within 24 hours.</p>
+  </div>
+  <a href="contact.html" class="btn-white">Contact Us →</a>
+</div>
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+        <div class="logo-icon" style="width:40px;height:40px;font-size:14px;">JCI</div>
+        <div style="color:#fff;font-size:18px;font-weight:700;">J.C.I. Cables (India)</div>
+      </div>
+      <p>Manufacturer and exporter of high-quality coaxial cables, RF connectors, CCTV cables, antennas, CAT6 cables, and PoE switches. Serving telecom, broadcast, security, and defence sectors since inception.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul><li><a href="coaxial-cables.html">Coaxial Cables</a></li>
+<li><a href="cctv-cable.html">CCTV Cables</a></li>
+<li><a href="rf-connectors.html">RF Connectors</a></li>
+<li><a href="antennas.html">Antennas</a></li>
+<li><a href="cable-connectors.html">Cable Connectors</a></li>
+<li><a href="connectors.html">Connectors</a></li>
+<li><a href="poe-switches.html">PoE Switches</a></li>
+<li><a href="cat-6-cable.html">CAT 6 Cable</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Get a Quote</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact">
+        <p>👤 KS Jaiswal (Proprietor)</p>
+        <p>📞 9350044165</p>
+        <p>📍 A-92, Wazirpur, New Delhi - 110052, Delhi, India</p>
+        <p>🏭 GST: 07AAFPJ7469P1ZX</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 J.C.I. Cables (India). All Rights Reserved.</span>
+    <span class="gst-badge">GST: 07AAFPJ7469P1ZX</span>
+    <span>Made in India 🇮🇳</span>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.btn-quote').forEach(btn=>btn.addEventListener('click',()=>window.location.href='contact.html'));
+</script>
+</body>
+</html>
