@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCI Cables Product Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f8fafc;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .title h1 {
+            font-size: 2.5rem;
+            color: #0a1428;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+
+        .title span {
+            color: #e8920a;
+        }
+
+        .title p {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+            border-color: #e8920a;
+        }
+
+        .product-visual {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #0f1f35 0%, #1e3a5f 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #e8920a;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-visual::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(232, 146, 10, 0.15) 0%, transparent 70%);
+        }
+
+        .product-visual > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-info {
+            padding: 25px;
+        }
+
+        .product-info h3 {
+            font-size: 1.3rem;
+            color: #0a1428;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .product-info p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .product-specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 8px;
+            font-size: 0.85rem;
+        }
+
+        .spec {
+            color: #64748b;
+        }
+
+        .spec strong {
+            color: #0a1428;
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 3px;
+        }
+
+        .product-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #e8920a;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .product-link:hover {
+            gap: 12px;
+            color: #f5a623;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .product-visual {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .product:nth-child(2) .product-visual {
+            animation-delay: 0.2s;
+        }
+
+        .product:nth-child(3) .product-visual {
+            animation-delay: 0.4s;
+        }
+
+        .product:nth-child(4) .product-visual {
+            animation-delay: 0.6s;
+        }
+
+        .product:nth-child(5) .product-visual {
+            animation-delay: 0.8s;
+        }
+
+        .product:nth-child(6) .product-visual {
+            animation-delay: 1s;
+        }
+
+        /* Feature highlights */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 80px;
+        }
+
+        .highlight-card {
+            background: linear-gradient(135deg, #0a1428 0%, #1e3a5f 100%);
+            padding: 30px;
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+        }
+
+        .highlight-card .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .highlight-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #f5a623;
+        }
+
+        .highlight-card p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .title h1 {
+                font-size: 1.8rem;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Our <span>Product Range</span></h1>
+            <p>Premium cables and connectors engineered for reliability and performance</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Coaxial Cables -->
+            <div class="product">
+                <div class="product-visual">📡</div>
+                <div class="product-info">
+                    <h3>Coaxial Cables</h3>
+                    <p>RG6, RG11, and custom shielding for TV, satellite, and RF applications</p>
+                    <div class="product-specs">
+                        <div class="spec">
+                            <strong>Impedance</strong>
+                            75Ω Standard
+                        </div>
+                        <div class="spec">
+                            <strong>Shielding</strong>
+                            Single/Double/Quad
+                        </div>
+                    </div>
+                    <div class="product-link">
+                        <span>Learn More</span>
+                        <span>→</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RF Connectors -->
+            <div class="product">
+                <div class="product-visual">🔌</div>
+                <div class="product-info">
+                    <h3>RF Connectors</h3>
+                    <p>SMA, BNC, N-type connectors for wireless and telecom systems</p>
+                    <div class="product-specs">
+                        <div class="spec">
+                            <strong>Types</strong>
+                            Multiple Standards
+                        </div>
+                        <div class="spec">
+                            <strong>Rating</strong>
+                            High Frequency
+                        </div>
+                    </div>
+                    <div class="product-link">
+                        <span>Learn More</span>
+                        <span>→</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CCTV Cables -->
+            <div class="product">
+                <div class="product-visual">📹</div>
+                <div class="product-info">
+                    <h3>CCTV Cables</h3>
+                    <p>Surveillance-grade shielded cables with connectors for security systems</p>
+                    <div class="product-specs">
+                        <div class="spec">
+                            <strong>Grade</strong>
+                            Surveillance Class
+                        </div>
+                        <div class="spec">
+                            <strong>Protection</strong>
+                            Heavy Duty
+                        </div>
+                    </div>
+                    <div class="product-link">
+                        <span>Learn More</span>
+                        <span>→</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cat 6 Ethernet -->
+            <div class="product">
+                <div class="product-visual">🌐</div>
+                <div class="product-info">
+                    <h3>Cat 6 Ethernet</h3>
+                    <p>High-speed networking cables for data centers and structured cabling</p>
+                    <div class="product-specs">
+                        <div class="spec">
+                            <strong>Speed</strong>
+                            Up to 10 Gbps
+                        </div>
+                        <div class="spec">
+                            <strong>Distance</strong>
+                            55m @ 10Gbps
+                        </div>
+                    </div>
+                    <div class="product-link">
+                        <span>Learn More</span>
+                        <span>→</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Antennas -->
+            <div class="product">
+                <div class="product-visual">📶</div>
+                <div class="product-info">
+                    <h3>Antennas</h3>
+                    <p>Indoor and outdoor antennas for wireless and broadcast applications</p>
+                    <div class="product-specs">
+                        <div class="spec">
+                            <strong>Types</strong>
+                            Indoor & Outdoor
+                        </div>
+                        <div class="spec">
+                            <strong>Coverage</strong>
+                            Wide Range
+                        </div>
+                    </div>
+                    <div class="product-link">
+                        <span>Learn More</span>
+                        <span>→</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PoE Switches -->
+            <div class="product">
+                <div class="product-visual">⚙️</div>
+                <div class="product-info">
+                    <h3>PoE Switches</h3>
+                    <p>Managed PoE switches for surveillance and IoT deployments</p>
+                    <div class="product-specs">
+                        <div class="spec">
+                            <strong>Ports</strong>
+                            Multiple Options
+                        </div>
+                        <div class="spec">
+                            <strong>Management</strong>
+                            Smart/Managed
+                        </div>
+                    </div>
+                    <div class="product-link">
+                        <span>Learn More</span>
+                        <span>→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Highlights Section -->
+        <div class="highlights">
+            <div class="highlight-card">
+                <div class="icon">✓</div>
+                <h3>Quality Assured</h3>
+                <p>ISO certified manufacturing with rigorous quality control at every step</p>
+            </div>
+            <div class="highlight-card">
+                <div class="icon">⚡</div>
+                <h3>Fast Turnaround</h3>
+                <p>Quick delivery on bulk orders with flexible MOQ and customization</p>
+            </div>
+            <div class="highlight-card">
+                <div class="icon">💰</div>
+                <h3>Competitive Pricing</h3>
+                <p>Best market rates without compromising on quality or performance</p>
+            </div>
+            <div class="highlight-card">
+                <div class="icon">🔧</div>
+                <h3>Expert Support</h3>
+                <p>Technical guidance and after-sales support for all products</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
