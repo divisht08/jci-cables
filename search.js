@@ -57,3 +57,30 @@
     if (e.key === 'Escape') { results.classList.remove('open'); input.blur(); }
   });
 })();
+
+
+(function () {
+  var toggle = document.getElementById('navToggle');
+  var collapse = document.getElementById('navCollapse');
+  if (!toggle || !collapse) return;
+  function closeMenu() {
+    collapse.classList.remove('open');
+    toggle.classList.remove('active');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+  toggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var open = collapse.classList.toggle('open');
+    toggle.classList.toggle('active', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  collapse.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', closeMenu);
+  });
+  document.addEventListener('click', function (e) {
+    if (!collapse.contains(e.target) && !toggle.contains(e.target)) closeMenu();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+})();
