@@ -241,6 +241,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 6px 20px rgba(232, 146, 10, 0.3);
+            display: inline-block;
         }
 
         .btn-primary:hover {
@@ -257,6 +258,7 @@
             border: 1.5px solid rgba(255, 255, 255, 0.25);
             cursor: pointer;
             transition: all 0.3s ease;
+            display: inline-block;
         }
 
         .btn-secondary:hover {
@@ -367,6 +369,13 @@
             justify-content: center;
             font-size: 3rem;
             color: var(--accent-gold);
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .product-info {
@@ -566,6 +575,68 @@
                 width: 100%;
             }
         }
+    
+        /* SITE SEARCH */
+        .site-search-wrap {
+            position: relative;
+            flex: 0 1 260px;
+            margin: 0 14px;
+        }
+        #siteSearchInput {
+            width: 100%;
+            padding: 9px 14px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.22);
+            background: rgba(255,255,255,0.08);
+            color: #fff;
+            font-size: 0.85rem;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+        #siteSearchInput::placeholder { color: rgba(255,255,255,0.55); }
+        #siteSearchInput:focus {
+            border-color: #e8920a;
+            background: rgba(255,255,255,0.15);
+        }
+        .site-search-results {
+            display: none;
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            right: 0;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+            max-height: 380px;
+            overflow-y: auto;
+            z-index: 999;
+        }
+        .site-search-results.open { display: block; }
+        .ss-item {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: #1a1f2e;
+            border-bottom: 1px solid #eef1f6;
+        }
+        .ss-item:last-child { border-bottom: none; }
+        .ss-item:hover { background: #f7f8fc; }
+        .ss-item img {
+            width: 38px; height: 38px; object-fit: cover;
+            border-radius: 6px; flex-shrink: 0; background: #eef1f6;
+        }
+        .ss-info { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+        .ss-name {
+            font-size: 0.85rem; font-weight: 600;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .ss-meta { font-size: 0.75rem; color: #64748b; }
+        .ss-empty { padding: 14px; font-size: 0.85rem; color: #64748b; text-align: center; }
+        @media (max-width: 860px) {
+            .site-search-wrap { order: 5; flex-basis: 100%; margin: 10px 0 0; }
+        }
     </style>
 </head>
 <body>
@@ -593,6 +664,11 @@
                 <li><a href="#features">Why Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="site-search-wrap" id="siteSearchWrap">
+                <input type="text" id="siteSearchInput" placeholder="Search products..." autocomplete="off">
+                <div class="site-search-results" id="siteSearchResults"></div>
+            </div>
+            
 
             <button class="cta-button">Get Quote</button>
         </nav>
@@ -604,8 +680,8 @@
             <h1>Premium <span>Cable & Connector</span> Solutions for India</h1>
             <p>Manufacturing industry-leading coaxial cables, RF connectors, CCTV cables, Cat6 Ethernet, antennas, and PoE switches since years of expertise.</p>
             <div class="hero-buttons">
-                <button class="btn-primary">📞 Request Sample</button>
-                <button class="btn-secondary">📥 View Catalog</button>
+                <a href="https://wa.me/917290830908?text=Hi%2C%20I%27d%20like%20to%20request%20a%20product%20sample." class="btn-primary" target="_blank" rel="noopener">📞 Request Sample</a>
+                <a href="#products" class="btn-secondary">📥 View Catalog</a>
             </div>
         </div>
     </section>
@@ -615,7 +691,7 @@
         <h2 class="section-title">Our <span>Product Range</span></h2>
         <div class="products-grid">
             <div class="product-card">
-                <div class="product-image">📡</div>
+                <div class="product-image"><img src="images/img-b857085e8d.png" alt="Hlf 195 Cable" loading="lazy" onerror="this.onerror=null;this.src='https://5.imimg.com/data5/SELLER/Default/2024/10/460440532/ET/CZ/UI/647686/hlf-195-500x500.jpg'"></div>
                 <div class="product-info">
                     <h3>Coaxial Cables</h3>
                     <p>RG6, RG11, and custom shielding for TV, satellite, and RF applications.</p>
@@ -624,7 +700,7 @@
             </div>
 
             <div class="product-card">
-                <div class="product-image">🔌</div>
+                <div class="product-image"><img src="images/img-2dbdadaf3a.png" alt="RG 141 Suco Form Cable" loading="lazy" onerror="this.onerror=null;this.src='https://5.imimg.com/data5/SELLER/Default/2024/10/456264647/XL/IH/NW/647686/whatsapp-image-2024-10-05-at-13-49-32-202ea1e7-500x500.jpg'"></div>
                 <div class="product-info">
                     <h3>RF Connectors</h3>
                     <p>SMA, BNC, N-type connectors for wireless and telecom systems.</p>
@@ -633,7 +709,7 @@
             </div>
 
             <div class="product-card">
-                <div class="product-image">📹</div>
+                <div class="product-image"><img src="images/img-b2fa57deb0.png" alt="4 Plus 1 CCTV Cable" loading="lazy" onerror="this.onerror=null;this.src='https://5.imimg.com/data5/SELLER/Default/2023/1/HH/WJ/KZ/647686/4-plus-1-cctv-cable-500x500.png'"></div>
                 <div class="product-info">
                     <h3>CCTV Cables</h3>
                     <p>Surveillance-grade shielded cables with connectors for security systems.</p>
@@ -642,7 +718,7 @@
             </div>
 
             <div class="product-card">
-                <div class="product-image">🌐</div>
+                <div class="product-image"><img src="images/img-7584697d2a.png" alt="Cat6 Armoured LAN Cable" loading="lazy" onerror="this.onerror=null;this.src='https://5.imimg.com/data5/SELLER/Default/2023/1/JP/EB/ZW/647686/cat-6-armoured-500x500.png'"></div>
                 <div class="product-info">
                     <h3>Cat 6 Ethernet</h3>
                     <p>High-speed networking cables for data centers and structured cabling.</p>
@@ -651,7 +727,7 @@
             </div>
 
             <div class="product-card">
-                <div class="product-image">📶</div>
+                <div class="product-image"><img src="images/img-0e499b8643.png" alt="HLF 240 Cable" loading="lazy" onerror="this.onerror=null;this.src='https://5.imimg.com/data5/SELLER/Default/2024/10/460445206/PT/AJ/NA/647686/hlf-240-cable-500x500.jpg'"></div>
                 <div class="product-info">
                     <h3>Antennas</h3>
                     <p>Indoor and outdoor antennas for wireless and broadcast applications.</p>
@@ -660,7 +736,7 @@
             </div>
 
             <div class="product-card">
-                <div class="product-image">⚙️</div>
+                <div class="product-image"><img src="images/img-8eb97e70ce.png" alt="RMX PoE Switch 8+2+2 SFP All Port Giga" loading="lazy" onerror="this.onerror=null;this.src='https://5.imimg.com/data5/SELLER/Default/2023/1/XH/KN/QK/647686/rmx-poe-switch-8-2-2-sfp-all-port-giga-500x500.jpg'"></div>
                 <div class="product-info">
                     <h3>PoE Switches</h3>
                     <p>Managed PoE switches for surveillance and IoT deployments.</p>
@@ -804,5 +880,6 @@
             window.open('https://wa.me/917290830908?text=Hi%20JCI%20Cables%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20your%20products.', '_blank');
         });
     </script>
+    <script src="search.js" defer></script>
 </body>
 </html>
