@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCI Cables India — Premium Cable & Connector Manufacturing</title>
+    <meta name="description" content="JCI Cables India: Leading manufacturer of coaxial cables, RF connectors, CCTV cables, Cat6 Ethernet, antennas, and PoE switches. GST verified. Quick WhatsApp support.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy-dark: #0a1428;
+            --navy: #0f1f35;
+            --navy-light: #1e3a5f;
+            --accent-gold: #e8920a;
+            --accent-gold-light: #f5a623;
+            --accent-green: #25d366;
+            --surface-light: #f8fafc;
+            --surface-alt: #eef2f7;
+            --text-primary: #1a1f2e;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --white: #ffffff;
+            --success: #10b981;
+            --warning: #f59e0b;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            color: var(--text-primary);
+            background: var(--white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* HEADER & NAVIGATION */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        header {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .topbar {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 8px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .topbar a {
+            color: var(--accent-gold-light);
+            font-weight: 500;
+            margin-right: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .topbar a:hover {
+            color: var(--white);
+        }
+
+        nav {
+            padding: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-mark {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.2rem;
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(232, 146, 10, 0.35);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text .brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text .tagline {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--accent-gold-light);
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(232, 146, 10, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(232, 146, 10, 0.4);
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* HERO SECTION */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        .hero {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-light) 100%);
+            padding: 80px 5%;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(232, 146, 10, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(232, 146, 10, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(232, 146, 10, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.12);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1.5px solid rgba(255, 255, 255, 0.25);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-3px);
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* FEATURES SECTION */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        .section {
+            padding: 80px 5%;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--text-primary);
+        }
+
+        .section-title span {
+            color: var(--accent-gold);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: var(--surface-light);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent-gold);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* PRODUCTS SECTION */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        .products-section {
+            background: var(--surface-alt);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+            border-color: var(--accent-gold);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--navy-light), var(--navy));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--accent-gold);
+        }
+
+        .product-info {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-info h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .product-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            flex: 1;
+        }
+
+        .product-link {
+            color: var(--accent-gold);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .product-link:hover {
+            gap: 10px;
+            color: var(--accent-gold-light);
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* STATS SECTION */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        .stats-section {
+            background: linear-gradient(135deg, var(--navy-dark), var(--navy-light));
+            color: var(--white);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stat-item h4 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--accent-gold);
+        }
+
+        .stat-item p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1rem;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* CTA SECTION */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        .cta-section {
+            background: var(--surface-alt);
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--accent-green);
+            color: var(--white);
+            padding: 15px 35px;
+            border-radius: 8px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* FOOTER */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        footer {
+            background: var(--navy);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 50px 5%;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* RESPONSIVE */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 50px 5%;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .section {
+                padding: 50px 5%;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="topbar">
+            <div>📍 New Delhi, India | GST Verified Manufacturer</div>
+            <div class="topbar-right">
+                <a href="mailto:info@jcicables.com">📧 Email</a>
+                <a href="https://wa.me/917290830908">💬 WhatsApp</a>
+            </div>
+        </div>
+
+        <nav>
+            <div class="logo">
+                <div class="logo-mark">⚡</div>
+                <div class="logo-text">
+                    <span class="brand">JCI Cables</span>
+                    <span class="tagline">Quality Connectivity</span>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="cta-button">Get Quote</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium <span>Cable & Connector</span> Solutions for India</h1>
+            <p>Manufacturing industry-leading coaxial cables, RF connectors, CCTV cables, Cat6 Ethernet, antennas, and PoE switches since years of expertise.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">📞 Request Sample</button>
+                <button class="btn-secondary">📥 View Catalog</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+        <h2 class="section-title">Why Choose <span>JCI Cables</span>?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">✓</div>
+                <h3>Quality Assured</h3>
+                <p>ISO certified manufacturing with rigorous quality control at every step of production.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Turnaround</h3>
+                <p>Quick delivery on bulk orders with flexible MOQ and customization options.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Competitive Pricing</h3>
+                <p>Best market rates without compromising on quality or performance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3>Technical Support</h3>
+                <p>Expert technical guidance and after-sales support for all products.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Pan-India Delivery</h3>
+                <p>Reliable shipping across India with tracking and insurance options.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Easy Ordering</h3>
+                <p>Quick quotations via WhatsApp, email, or direct call within 24 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section products-section" id="products">
+        <h2 class="section-title">Our <span>Product Range</span></h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">📡</div>
+                <div class="product-info">
+                    <h3>Coaxial Cables</h3>
+                    <p>RG6, RG11, and custom shielding for TV, satellite, and RF applications.</p>
+                    <a href="coaxial-cables.html" class="product-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🔌</div>
+                <div class="product-info">
+                    <h3>RF Connectors</h3>
+                    <p>SMA, BNC, N-type connectors for wireless and telecom systems.</p>
+                    <a href="rf-connectors.html" class="product-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">📹</div>
+                <div class="product-info">
+                    <h3>CCTV Cables</h3>
+                    <p>Surveillance-grade shielded cables with connectors for security systems.</p>
+                    <a href="cctv-cable.html" class="product-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌐</div>
+                <div class="product-info">
+                    <h3>Cat 6 Ethernet</h3>
+                    <p>High-speed networking cables for data centers and structured cabling.</p>
+                    <a href="cat-6-cable.html" class="product-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">📶</div>
+                <div class="product-info">
+                    <h3>Antennas</h3>
+                    <p>Indoor and outdoor antennas for wireless and broadcast applications.</p>
+                    <a href="antennas.html" class="product-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">⚙️</div>
+                <div class="product-info">
+                    <h3>PoE Switches</h3>
+                    <p>Managed PoE switches for surveillance and IoT deployments.</p>
+                    <a href="poe-switches.html" class="product-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h4>10K+</h4>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-item">
+                <h4>50+</h4>
+                <p>Product SKUs</p>
+            </div>
+            <div class="stat-item">
+                <h4>95%</h4>
+                <p>On-Time Delivery</p>
+            </div>
+            <div class="stat-item">
+                <h4>24/7</h4>
+                <p>Customer Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="contact">
+        <h2>Ready to Order?</h2>
+        <p>Get in touch with our team for quotes, samples, or technical specifications. We respond within 2 hours.</p>
+        <button class="whatsapp-btn">
+            💬 Chat on WhatsApp
+        </button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Certifications</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="coaxial-cables.html">Coaxial Cables</a></li>
+                    <li><a href="rf-connectors.html">RF Connectors</a></li>
+                    <li><a href="cctv-cable.html">CCTV Cables</a></li>
+                    <li><a href="cat-6-cable.html">Cat 6 Cables</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📍 New Delhi, India</li>
+                    <li>📞 +91 7290 830 908</li>
+                    <li>📧 info@jcicables.com</li>
+                    <li>💬 WhatsApp Friendly</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Certifications</h4>
+                <ul>
+                    <li>✓ GST Registered</li>
+                    <li>✓ ISO Certified</li>
+                    <li>✓ Quality Assured</li>
+                    <li>✓ Trusted by Industry</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 JCI Cables India. All rights reserved. | Premium Cable & Connector Manufacturing | New Delhi</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // WhatsApp button
+        document.querySelector('.whatsapp-btn').addEventListener('click', function () {
+            window.open('https://wa.me/917290830908?text=Hi%20JCI%20Cables%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20your%20products.', '_blank');
+        });
+    </script>
+</body>
+</html>
