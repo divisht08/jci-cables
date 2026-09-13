@@ -1,746 +1,808 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Coaxial Cables, RF Connectors &amp; PoE Switches — J.C.I. Cables (India)</title>
-<meta name="description" content="J.C.I. Cables India — New Delhi manufacturer of coaxial cables, RF connectors, CCTV cables, Cat6, antennas and PoE switches. GST verified. WhatsApp enquiry.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCI Cables India — Premium Cable & Connector Manufacturing</title>
+    <meta name="description" content="JCI Cables India: Leading manufacturer of coaxial cables, RF connectors, CCTV cables, Cat6 Ethernet, antennas, and PoE switches. GST verified. Quick WhatsApp support.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        :root {
+            --navy-dark: #0a1428;
+            --navy: #0f1f35;
+            --navy-light: #1e3a5f;
+            --accent-gold: #e8920a;
+            --accent-gold-light: #f5a623;
+            --accent-green: #25d366;
+            --surface-light: #f8fafc;
+            --surface-alt: #eef2f7;
+            --text-primary: #1a1f2e;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --white: #ffffff;
+            --success: #10b981;
+            --warning: #f59e0b;
+        }
 
-:root {
-  --navy:      #0f1f35;
-  --navy-mid:  #1a2e4a;
-  --navy-light:#243b5e;
-  --gold:      #e8920a;
-  --gold-light:#f5a623;
-  --gold-pale: #fef3e2;
-  --green:     #25D366;
-  --surface:   #f7f8fc;
-  --border:    #e4e8f0;
-  --text:      #1a1f2e;
-  --muted:     #64748b;
-  --white:     #ffffff;
-  --radius-sm: 8px;
-  --radius:    12px;
-  --radius-lg: 20px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04);
-  --shadow:    0 4px 16px rgba(15,31,53,.10), 0 1px 4px rgba(15,31,53,.06);
-  --shadow-lg: 0 12px 40px rgba(15,31,53,.14), 0 4px 12px rgba(15,31,53,.08);
-  --transition: 0.22s cubic-bezier(0.4,0,0.2,1);
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            color: var(--text-primary);
+            background: var(--white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
 
-html { scroll-behavior: smooth; }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: var(--text);
-  background: var(--white);
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.6;
-}
+        img {
+            max-width: 100%;
+            display: block;
+        }
 
-a { text-decoration: none; color: inherit; }
-img { display: block; max-width: 100%; }
+        /* ─────────────────────────────────────────────────────────────── */
+        /* HEADER & NAVIGATION */
+        /* ─────────────────────────────────────────────────────────────── */
 
-/* ── TOPBAR ── */
-.topbar {
-  background: var(--navy);
-  padding: 7px 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.78rem;
-  color: rgba(255,255,255,0.55);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-.topbar a { color: var(--gold-light); font-weight: 500; }
-.topbar-right { display: flex; gap: 24px; align-items: center; }
+        header {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
 
-/* ── NAV ── */
-nav {
-  background: var(--navy-mid);
-  padding: 0 5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 68px;
-  position: sticky;
-  top: 0;
-  z-index: 200;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.25);
-  backdrop-filter: blur(12px);
-}
-.logo { display: flex; align-items: center; gap: 11px; }
-.logo-mark {
-  width: 40px; height: 40px;
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  border-radius: var(--radius-sm);
-  display: flex; align-items: center; justify-content: center;
-  font-weight: 900; font-size: 1.1rem; color: var(--white);
-  flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(232,146,10,.4);
-}
-.logo-text .brand { font-size: 1.05rem; font-weight: 700; color: var(--white); letter-spacing: -0.01em; }
-.logo-text .tagline { font-size: 0.68rem; color: rgba(255,255,255,0.45); letter-spacing: 0.03em; margin-top: 1px; }
-.nav-links { display: flex; gap: 2px; list-style: none; }
-.nav-links a {
-  color: rgba(255,255,255,0.72);
-  font-size: 0.83rem;
-  font-weight: 500;
-  padding: 7px 12px;
-  border-radius: var(--radius-sm);
-  transition: all var(--transition);
-  white-space: nowrap;
-}
-.nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.08); }
-.nav-links a.active { color: var(--gold-light); background: rgba(232,146,10,0.12); }
-.nav-cta {
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  color: var(--white);
-  padding: 9px 20px;
-  border-radius: var(--radius-sm);
-  font-size: 0.83rem;
-  font-weight: 600;
-  transition: all var(--transition);
-  box-shadow: 0 2px 8px rgba(232,146,10,.3);
-  white-space: nowrap;
-}
-.nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(232,146,10,.4); }
+        .topbar {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 8px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
 
-/* ── PAGE HERO ── */
-.page-hero {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
-  padding: 56px 5% 52px;
-  position: relative;
-  overflow: hidden;
-}
-.page-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-.page-hero::after {
-  content: '';
-  position: absolute;
-  right: -60px; top: -60px;
-  width: 320px; height: 320px;
-  background: radial-gradient(circle, rgba(232,146,10,0.12) 0%, transparent 70%);
-  pointer-events: none;
-}
-.page-hero-inner { position: relative; z-index: 1; max-width: 680px; }
-.breadcrumb {
-  display: flex; align-items: center; gap: 6px;
-  font-size: 0.78rem; color: rgba(255,255,255,0.45);
-  margin-bottom: 16px;
-}
-.breadcrumb a { color: var(--gold-light); }
-.breadcrumb span { color: rgba(255,255,255,0.25); }
-.page-hero h1 {
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  font-weight: 800;
-  color: var(--white);
-  letter-spacing: -0.02em;
-  line-height: 1.15;
-  margin-bottom: 12px;
-}
-.page-hero h1 em { color: var(--gold-light); font-style: normal; }
-.page-hero p { font-size: 1rem; color: rgba(255,255,255,0.62); max-width: 540px; line-height: 1.65; }
-.hero-badge {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: rgba(232,146,10,0.15);
-  border: 1px solid rgba(232,146,10,0.3);
-  color: var(--gold-light);
-  font-size: 0.75rem; font-weight: 600;
-  padding: 5px 12px; border-radius: 20px;
-  margin-bottom: 18px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
+        .topbar a {
+            color: var(--accent-gold-light);
+            font-weight: 500;
+            margin-right: 20px;
+            transition: color 0.3s ease;
+        }
 
-/* ── SECTION ── */
-.section { padding: 64px 5%; }
-.section-label {
-  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
-  text-transform: uppercase; color: var(--gold);
-  margin-bottom: 8px;
-}
-.section-title {
-  font-size: clamp(1.4rem, 3vw, 1.9rem);
-  font-weight: 800; color: var(--navy); letter-spacing: -0.02em;
-  margin-bottom: 6px;
-}
-.section-sub { font-size: 0.95rem; color: var(--muted); max-width: 540px; }
-.section-head { margin-bottom: 36px; }
+        .topbar a:hover {
+            color: var(--white);
+        }
 
-/* ── PRODUCT GRID ── */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 20px;
-}
+        nav {
+            padding: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
 
-/* ── PRODUCT CARD ── */
-.product-card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(232,146,10,0.3);
-}
-.product-card:hover .card-img-wrap img { transform: scale(1.05); }
-.card-img-wrap {
-  overflow: hidden;
-  background: var(--surface);
-  position: relative;
-  height: 200px;
-}
-.card-img-wrap::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, transparent 55%, rgba(15,31,53,0.06) 100%);
-}
-.card-img-wrap img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s var(--transition);
-}
-.card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; }
-.card-body h3 {
-  font-size: 0.88rem; font-weight: 600; color: var(--navy);
-  line-height: 1.4; min-height: 38px; margin-bottom: 10px;
-  flex: 1;
-}
-.card-meta {
-  display: flex; align-items: center; justify-content: space-between;
-  margin-bottom: 12px;
-}
-.card-price { font-size: 0.82rem; color: var(--muted); }
-.card-price strong { color: var(--gold); font-size: 1rem; font-weight: 700; }
-.card-unit { font-size: 0.72rem; color: var(--muted); margin-left: 2px; }
-.latest-price {
-  font-size: 0.7rem; font-weight: 500;
-  color: var(--gold);
-  background: var(--gold-pale);
-  padding: 3px 8px; border-radius: 20px;
-  white-space: nowrap;
-}
-.btn-wishlist {
-  display: flex; align-items: center; justify-content: center; gap: 6px;
-  width: 100%;
-  background: var(--navy);
-  color: var(--white);
-  border: 2px solid var(--navy);
-  padding: 10px 16px;
-  border-radius: var(--radius-sm);
-  font-size: 0.82rem; font-weight: 600;
-  cursor: pointer;
-  transition: all var(--transition);
-  letter-spacing: 0.01em;
-}
-.btn-wishlist:hover { background: var(--gold); border-color: var(--gold); }
-.btn-wishlist.added { background: var(--white); color: var(--navy); border-color: var(--navy); }
-.btn-wishlist.added::before { content: "✓ "; }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
 
-/* ── TRUST BAR ── */
-.trust-bar {
-  background: var(--surface);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 18px 5%;
-  display: flex; align-items: center; justify-content: center;
-  gap: 40px; flex-wrap: wrap;
-}
-.trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.83rem; color: var(--muted); font-weight: 500; }
-.trust-item strong { color: var(--navy); }
-.trust-dot { width: 4px; height: 4px; background: var(--border); border-radius: 50%; }
+        .logo-mark {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.2rem;
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(232, 146, 10, 0.35);
+        }
 
-/* ── FOOTER ── */
-footer {
-  background: var(--navy);
-  color: rgba(255,255,255,0.55);
-  padding: 56px 5% 24px;
-}
-.footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr; gap: 48px; margin-bottom: 40px; }
-.footer-brand .logo-mark-sm {
-  width: 36px; height: 36px;
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  border-radius: var(--radius-sm);
-  display: flex; align-items: center; justify-content: center;
-  font-weight: 900; font-size: 0.95rem; color: var(--white);
-  margin-bottom: 14px;
-}
-.footer-brand p { font-size: 0.83rem; line-height: 1.75; max-width: 280px; }
-.footer-col h4 {
-  color: var(--white); font-size: 0.8rem; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.08em;
-  margin-bottom: 16px; padding-bottom: 8px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-.footer-col a { display: block; font-size: 0.83rem; line-height: 2; color: rgba(255,255,255,0.5); transition: color var(--transition); }
-.footer-col a:hover { color: var(--gold-light); }
-.footer-col p { font-size: 0.83rem; line-height: 1.8; }
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.07);
-  padding-top: 20px;
-  display: flex; justify-content: space-between; align-items: center;
-  flex-wrap: wrap; gap: 12px;
-  font-size: 0.76rem;
-}
-.gst-tag {
-  background: rgba(232,146,10,0.12);
-  border: 1px solid rgba(232,146,10,0.25);
-  color: var(--gold-light);
-  padding: 4px 12px; border-radius: 20px; font-size: 0.72rem; font-weight: 600;
-}
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
 
-/* ── WISHLIST FAB ── */
-#wl-fab {
-  position: fixed; bottom: 28px; right: 28px; z-index: 999;
-  background: var(--green); color: var(--white);
-  border: none; border-radius: 50px;
-  padding: 13px 20px;
-  font-size: 0.9rem; font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 4px 20px rgba(37,211,102,.35);
-  display: flex; align-items: center; gap: 8px;
-  transition: all var(--transition);
-  font-family: inherit;
-}
-#wl-fab:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(37,211,102,.45); }
-#wl-fab.empty { background: #94a3b8; box-shadow: none; }
-#wl-fab .wl-count {
-  background: var(--white); color: var(--green);
-  border-radius: 50%; width: 20px; height: 20px;
-  font-size: 0.72rem; display: inline-flex;
-  align-items: center; justify-content: center; font-weight: 800;
-}
-#wl-fab.empty .wl-count { color: #94a3b8; }
+        .logo-text .brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -0.5px;
+        }
 
-/* ── WISHLIST PANEL ── */
-#wl-overlay { display: none; position: fixed; inset: 0; background: rgba(10,20,40,.55); z-index: 1000; backdrop-filter: blur(3px); }
-#wl-panel {
-  position: fixed; bottom: 0; right: 0;
-  width: 400px; max-width: 100vw; max-height: 85vh;
-  background: var(--white);
-  border-radius: 20px 20px 0 0;
-  z-index: 1001;
-  display: flex; flex-direction: column;
-  box-shadow: 0 -8px 40px rgba(0,0,0,.18);
-  transform: translateY(100%);
-  transition: transform 0.35s cubic-bezier(0.34,1.1,0.64,1);
-}
-#wl-panel.open { transform: translateY(0); }
-.wl-handle {
-  width: 36px; height: 4px; background: var(--border);
-  border-radius: 2px; margin: 10px auto 0;
-}
-.wl-header {
-  padding: 16px 20px 14px;
-  border-bottom: 1px solid var(--border);
-  display: flex; justify-content: space-between; align-items: center;
-}
-.wl-header h3 { font-size: 1rem; font-weight: 700; color: var(--navy); }
-.wl-header-sub { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
-.wl-close {
-  background: var(--surface); border: none;
-  width: 32px; height: 32px; border-radius: 50%;
-  color: var(--muted); font-size: 1rem; cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: all var(--transition);
-}
-.wl-close:hover { background: var(--border); color: var(--text); }
-.wl-items { flex: 1; overflow-y: auto; padding: 12px 20px; }
-.wl-empty { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 0.88rem; line-height: 1.7; }
-.wl-empty-icon { font-size: 2.4rem; margin-bottom: 12px; opacity: 0.4; }
-.wl-item {
-  display: flex; align-items: center; gap: 12px;
-  padding: 11px 0; border-bottom: 1px solid var(--border);
-}
-.wl-item:last-child { border-bottom: none; }
-.wl-item-name { font-size: 0.85rem; font-weight: 600; color: var(--navy); flex: 1; line-height: 1.35; }
-.wl-remove {
-  background: none; border: none; color: #cbd5e1;
-  font-size: 1rem; cursor: pointer; padding: 4px;
-  border-radius: 4px; transition: color var(--transition);
-  flex-shrink: 0;
-}
-.wl-remove:hover { color: #ef4444; }
-.wl-footer { padding: 16px 20px 20px; border-top: 1px solid var(--border); }
-.btn-wa {
-  display: flex; align-items: center; justify-content: center; gap: 8px;
-  width: 100%; background: var(--green); color: var(--white);
-  border: none; padding: 14px;
-  border-radius: var(--radius-sm);
-  font-size: 0.92rem; font-weight: 700;
-  cursor: pointer; transition: all var(--transition);
-  font-family: inherit; letter-spacing: 0.01em;
-  box-shadow: 0 2px 10px rgba(37,211,102,.3);
-}
-.btn-wa:hover { background: #1ebe5d; transform: translateY(-1px); box-shadow: 0 4px 14px rgba(37,211,102,.4); }
-.btn-wa-icon { font-size: 1.15rem; }
-.btn-clear {
-  display: block; width: 100%; background: none;
-  border: 1px solid var(--border); color: var(--muted);
-  padding: 9px; border-radius: var(--radius-sm);
-  font-size: 0.78rem; cursor: pointer; margin-top: 8px;
-  transition: all var(--transition); font-family: inherit;
-}
-.btn-clear:hover { border-color: #fca5a5; color: #ef4444; }
+        .logo-text .tagline {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
 
-@media (max-width: 768px) {
-  .nav-links { display: none; }
-  .topbar-left { display: none; }
-  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-  .trust-bar { gap: 16px; justify-content: flex-start; }
-}
+        .nav-links {
+            display: flex;
+            gap: 3px;
+            list-style: none;
+        }
 
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
 
-/* ── HOME HERO ── */
-.home-hero {
-  background: linear-gradient(135deg, var(--navy) 0%, #12243d 40%, var(--navy-light) 100%);
-  min-height: 520px;
-  display: flex; align-items: center;
-  padding: 72px 5%;
-  position: relative; overflow: hidden;
-}
-.home-hero::before {
-  content:'';position:absolute;inset:0;
-  background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-.home-hero::after {
-  content:''; position:absolute;
-  right:-80px; bottom:-80px;
-  width:500px; height:500px;
-  background: radial-gradient(circle, rgba(232,146,10,0.10) 0%, transparent 65%);
-  pointer-events:none;
-}
-.hero-left { flex:1; position:relative; z-index:1; max-width:620px; }
-.hero-eyebrow {
-  display:inline-flex; align-items:center; gap:8px;
-  background:rgba(232,146,10,0.14); border:1px solid rgba(232,146,10,0.28);
-  color:var(--gold-light); font-size:0.72rem; font-weight:700;
-  padding:6px 14px; border-radius:20px; margin-bottom:22px;
-  letter-spacing:0.08em; text-transform:uppercase;
-}
-.hero-h1 {
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
-  font-weight: 800; color: var(--white);
-  line-height: 1.12; letter-spacing: -0.03em; margin-bottom: 18px;
-}
-.hero-h1 span { color: var(--gold-light); }
-.hero-p { font-size:1.05rem; color:rgba(255,255,255,0.65); line-height:1.7; margin-bottom:32px; max-width:500px; }
-.hero-btns { display:flex; gap:12px; flex-wrap:wrap; }
-.btn-primary {
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  color: var(--white); padding: 13px 28px;
-  border-radius: var(--radius-sm); font-weight: 700; font-size: 0.92rem;
-  transition: all var(--transition); display:inline-flex; align-items:center; gap:8px;
-  box-shadow: 0 4px 14px rgba(232,146,10,.35);
-}
-.btn-primary:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(232,146,10,.45); }
-.btn-secondary {
-  background: rgba(255,255,255,0.08); color:var(--white);
-  border:1px solid rgba(255,255,255,0.18);
-  padding:13px 26px; border-radius:var(--radius-sm);
-  font-weight:600; font-size:0.92rem;
-  transition:all var(--transition); display:inline-flex; align-items:center; gap:8px;
-}
-.btn-secondary:hover { background:rgba(255,255,255,0.14); border-color:rgba(255,255,255,0.35); }
-.hero-stats {
-  display:flex; gap:32px; margin-top:40px; padding-top:32px;
-  border-top:1px solid rgba(255,255,255,0.10);
-}
-.stat-num { font-size:1.8rem; font-weight:800; color:var(--gold-light); letter-spacing:-0.02em; }
-.stat-lbl { font-size:0.75rem; color:rgba(255,255,255,0.45); margin-top:3px; text-transform:uppercase; letter-spacing:0.04em; font-weight:500; }
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--accent-gold-light);
+        }
 
-/* ── CATEGORIES ── */
-.categories-grid {
-  display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
-  gap:16px;
-}
-.cat-card {
-  background:var(--white);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:24px 20px;
-  display:flex; align-items:center; gap:16px;
-  transition:all var(--transition);
-  cursor:pointer;
-}
-.cat-card:hover {
-  border-color:var(--gold);
-  box-shadow:var(--shadow);
-  transform:translateY(-2px);
-}
-.cat-icon-wrap {
-  width:48px; height:48px; flex-shrink:0;
-  background:var(--gold-pale);
-  border-radius:var(--radius-sm);
-  display:flex; align-items:center; justify-content:center;
-  font-size:1.5rem;
-  transition:background var(--transition);
-}
-.cat-card:hover .cat-icon-wrap { background:var(--gold); }
-.cat-card:hover .cat-icon-wrap .cat-icon-emoji { filter:grayscale(0); }
-.cat-info h3 { font-size:0.88rem; font-weight:700; color:var(--navy); margin-bottom:3px; }
-.cat-info span { font-size:0.75rem; color:var(--muted); }
+        .cta-button {
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(232, 146, 10, 0.3);
+        }
 
-/* ── WHY SECTION ── */
-.why-section { background:var(--surface); padding:72px 5%; }
-.why-grid {
-  display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr));
-  gap:20px; margin-top:40px;
-}
-.why-card {
-  background:var(--white);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:28px 24px;
-  transition:all var(--transition);
-}
-.why-card:hover { box-shadow:var(--shadow); transform:translateY(-2px); border-color:rgba(232,146,10,.25); }
-.why-icon { font-size:1.8rem; margin-bottom:14px; }
-.why-card h3 { font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:8px; }
-.why-card p { font-size:0.85rem; color:var(--muted); line-height:1.65; }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(232, 146, 10, 0.4);
+        }
 
-/* ── CTA STRIP ── */
-.cta-strip {
-  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-  padding:48px 5%;
-  display:flex; align-items:center; justify-content:space-between;
-  gap:24px; flex-wrap:wrap;
-  position:relative; overflow:hidden;
-}
-.cta-strip::before {
-  content:''; position:absolute; right:-40px; top:-40px;
-  width:200px; height:200px;
-  background:rgba(255,255,255,0.12);
-  border-radius:50%;
-}
-.cta-text h2 { font-size:1.6rem; font-weight:800; color:var(--white); margin-bottom:6px; }
-.cta-text p { font-size:0.92rem; color:rgba(255,255,255,0.85); }
-.btn-white {
-  background:var(--white); color:var(--gold);
-  padding:14px 30px; border-radius:var(--radius-sm);
-  font-weight:700; font-size:0.95rem;
-  transition:all var(--transition); white-space:nowrap;
-  box-shadow:0 4px 14px rgba(0,0,0,.12);
-  display:inline-flex; align-items:center; gap:8px;
-  flex-shrink:0;
-}
-.btn-white:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,.18); }
-</style>
+        /* ─────────────────────────────────────────────────────────────── */
+        /* HERO SECTION */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        .hero {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-light) 100%);
+            padding: 80px 5%;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(232, 146, 10, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(232, 146, 10, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(232, 146, 10, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.12);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1.5px solid rgba(255, 255, 255, 0.25);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-3px);
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* FEATURES SECTION */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        .section {
+            padding: 80px 5%;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--text-primary);
+        }
+
+        .section-title span {
+            color: var(--accent-gold);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: var(--surface-light);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent-gold);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* PRODUCTS SECTION */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        .products-section {
+            background: var(--surface-alt);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+            border-color: var(--accent-gold);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--navy-light), var(--navy));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--accent-gold);
+        }
+
+        .product-info {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-info h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .product-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            flex: 1;
+        }
+
+        .product-link {
+            color: var(--accent-gold);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .product-link:hover {
+            gap: 10px;
+            color: var(--accent-gold-light);
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* STATS SECTION */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        .stats-section {
+            background: linear-gradient(135deg, var(--navy-dark), var(--navy-light));
+            color: var(--white);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stat-item h4 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--accent-gold);
+        }
+
+        .stat-item p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1rem;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* CTA SECTION */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        .cta-section {
+            background: var(--surface-alt);
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--accent-green);
+            color: var(--white);
+            padding: 15px 35px;
+            border-radius: 8px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* FOOTER */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        footer {
+            background: var(--navy);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 50px 5%;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* RESPONSIVE */
+        /* ─────────────────────────────────────────────────────────────── */
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 50px 5%;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .section {
+                padding: 50px 5%;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- HEADER -->
+    <header>
+        <div class="topbar">
+            <div>📍 New Delhi, India | GST Verified Manufacturer</div>
+            <div class="topbar-right">
+                <a href="mailto:info@jcicables.com">📧 Email</a>
+                <a href="https://wa.me/917290830908">💬 WhatsApp</a>
+            </div>
+        </div>
 
-<div class="topbar">
-  <span>🏭 Manufacturer &amp; Supplier — New Delhi, India</span>
-  <div class="topbar-right">
-    <span>GST: 07AAFPJ7469P1ZX</span>
-    <a href="tel:7290830908">📞 7290830908</a>
-  </div>
-</div>
-<nav>
-  <a href="index.html" class="logo">
-    <div class="logo-mark">J</div>
-    <div class="logo-text">
-      <div class="brand">JCI Cables (India)</div>
-      <div class="tagline">Quality Cables &amp; Connectors</div>
-    </div>
-  </a>
-  <ul class="nav-links"><li><a href="coaxial-cables.html">Coaxial</a></li><li><a href="cctv-cable.html">CCTV Cable</a></li><li><a href="rf-connectors.html">RF Connectors</a></li><li><a href="antennas.html">Antennas</a></li><li><a href="cable-connectors.html">Cable Connectors</a></li><li><a href="connectors.html">Connectors</a></li><li><a href="poe-switches.html">PoE Switches</a></li><li><a href="cat-6-cable.html">Cat 6 Cable</a></li></ul>
-  <a href="contact.html" class="nav-cta">Get Quote</a>
-</nav>
+        <nav>
+            <div class="logo">
+                <div class="logo-mark">⚡</div>
+                <div class="logo-text">
+                    <span class="brand">JCI Cables</span>
+                    <span class="tagline">Quality Connectivity</span>
+                </div>
+            </div>
 
-<!-- HOME HERO -->
-<section class="home-hero">
-  <div class="hero-left">
-    <div class="hero-eyebrow">🏭 New Delhi Manufacturer</div>
-    <h1 class="hero-h1">India's Trusted<br><span>Cables &amp; Connectors</span><br>Supplier</h1>
-    <p class="hero-p">Coaxial cables, RF connectors, CCTV cables, antennas, PoE switches, and Cat 6 — all under one roof. GST verified, pan-India dispatch.</p>
-    <div class="hero-btns">
-      <a href="coaxial-cables.html" class="btn-primary">🛍 Browse Products</a>
-      <a href="contact.html" class="btn-secondary">📲 Get a Quote</a>
-    </div>
-    <div class="hero-stats">
-      <div><div class="stat-num">100+</div><div class="stat-lbl">Products</div></div>
-      <div><div class="stat-num">8</div><div class="stat-lbl">Categories</div></div>
-      <div><div class="stat-num">GST ✓</div><div class="stat-lbl">Verified</div></div>
-      <div><div class="stat-num">Delhi</div><div class="stat-lbl">HQ</div></div>
-    </div>
-  </div>
-</section>
+            <ul class="nav-links">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-<div class="trust-bar">
-  <div class="trust-item">✅ <strong>GST Verified</strong> Supplier</div>
-  <div class="trust-dot"></div>
-  <div class="trust-item">🏭 <strong>Delhi HQ</strong> — Fast Pan-India Dispatch</div>
-  <div class="trust-dot"></div>
-  <div class="trust-item">📦 <strong>100+</strong> Products In Stock</div>
-  <div class="trust-dot"></div>
-  <div class="trust-item">📲 <strong>WhatsApp</strong> Enquiry in 30 Seconds</div>
-</div>
+            <button class="cta-button">Get Quote</button>
+        </nav>
+    </header>
 
-<!-- CATEGORIES -->
-<section class="section">
-  <div class="section-head">
-    <div class="section-label">What We Offer</div>
-    <div class="section-title">Browse by Category</div>
-    <div class="section-sub">Explore our full range of cables, connectors, antennas, and networking equipment.</div>
-  </div>
-  <div class="categories-grid">
-    <a href="coaxial-cables.html" class="cat-card"><div class="cat-icon-wrap"><span class="cat-icon-emoji">📡</span></div><div class="cat-info"><h3>Coaxial Cables</h3><span>18 products</span></div></a>
-    <a href="cctv-cable.html" class="cat-card"><div class="cat-icon-wrap"><span class="cat-icon-emoji">📷</span></div><div class="cat-info"><h3>CCTV Cables</h3><span>16 products</span></div></a>
-    <a href="rf-connectors.html" class="cat-card"><div class="cat-icon-wrap"><span class="cat-icon-emoji">🔌</span></div><div class="cat-info"><h3>RF Connectors</h3><span>15 products</span></div></a>
-    <a href="antennas.html" class="cat-card"><div class="cat-icon-wrap"><span class="cat-icon-emoji">📶</span></div><div class="cat-info"><h3>Antennas</h3><span>14 products</span></div></a>
-    <a href="cable-connectors.html" class="cat-card"><div class="cat-icon-wrap"><span class="cat-icon-emoji">🔗</span></div><div class="cat-info"><h3>Cable Connectors</h3><span>11 products</span></div></a>
-    <a href="connectors.html" class="cat-card"><div class="cat-icon-wrap"><span class="cat-icon-emoji">⚡</span></div><div class="cat-info"><h3>Connectors</h3><span>11 products</span></div></a>
-    <a href="poe-switches.html" class="cat-card"><div class="cat-icon-wrap"><span class="cat-icon-emoji">🖧</span></div><div class="cat-info"><h3>PoE Switches</h3><span>9 products</span></div></a>
-    <a href="cat-6-cable.html" class="cat-card"><div class="cat-icon-wrap"><span class="cat-icon-emoji">🌐</span></div><div class="cat-info"><h3>Cat 6 Cable</h3><span>9 products</span></div></a>
-  </div>
-</section>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium <span>Cable & Connector</span> Solutions for India</h1>
+            <p>Manufacturing industry-leading coaxial cables, RF connectors, CCTV cables, Cat6 Ethernet, antennas, and PoE switches since years of expertise.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">📞 Request Sample</button>
+                <button class="btn-secondary">📥 View Catalog</button>
+            </div>
+        </div>
+    </section>
 
-<!-- WHY JCI -->
-<section class="why-section">
-  <div class="section-head">
-    <div class="section-label">Why Choose Us</div>
-    <div class="section-title">Built on Trust &amp; Quality</div>
-    <div class="section-sub">Three decades of supplying cables and connectors to Delhi's best integrators, contractors, and engineers.</div>
-  </div>
-  <div class="why-grid">
-    <div class="why-card"><div class="why-icon">🏭</div><h3>Direct Manufacturer</h3><p>No middlemen. You buy direct from the source — better prices, faster turnaround, and full accountability.</p></div>
-    <div class="why-card"><div class="why-icon">✅</div><h3>GST Verified</h3><p>Fully GST registered (07AAFPJ7469P1ZX). Proper invoices, ITC eligible, audit-ready documentation.</p></div>
-    <div class="why-card"><div class="why-icon">📦</div><h3>Pan-India Delivery</h3><p>We dispatch from New Delhi to every state. Bulk orders welcome with competitive freight rates.</p></div>
-    <div class="why-card"><div class="why-icon">📲</div><h3>WhatsApp Enquiry</h3><p>Add products to your enquiry list and get a price quote on WhatsApp in minutes — no forms, no waiting.</p></div>
-  </div>
-</section>
+    <!-- PRODUCTS -->
+    <section class="section products-section" id="products">
+        <h2 class="section-title">Our <span>Product Range</span></h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">📡</div>
+                <div class="product-info">
+                    <h3>Coaxial Cables</h3>
+                    <p>RG6, RG11, and custom shielding for TV, satellite, and RF applications.</p>
+                    <a href="coaxial-cables.html" class="product-link">Learn More →</a>
+                </div>
+            </div>
 
-<!-- CTA STRIP -->
-<div class="cta-strip">
-  <div class="cta-text">
-    <h2>Ready to place an order?</h2>
-    <p>Chat with us on WhatsApp for the latest prices and bulk discounts.</p>
-  </div>
-  <a href="https://wa.me/917290830908" target="_blank" class="btn-white">📲 WhatsApp Us Now</a>
-</div>
+            <div class="product-card">
+                <div class="product-image">🔌</div>
+                <div class="product-info">
+                    <h3>RF Connectors</h3>
+                    <p>SMA, BNC, N-type connectors for wireless and telecom systems.</p>
+                    <a href="rf-connectors.html" class="product-link">Learn More →</a>
+                </div>
+            </div>
 
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="logo-mark-sm">J</div>
-      <p>J.C.I. Cables (India) is a New Delhi based manufacturer and supplier of coaxial cables, RF connectors, CCTV cables, antennas, PoE switches, and Cat 6 networking cables.</p>
-      <br>
-      <p>📍 A-92, Wazirpur, New Delhi – 110052</p>
-      <p>👤 KS Jaiswal, Proprietor</p>
-    </div>
-    <div class="footer-col">
-      <h4>Products</h4>
-      <a href="coaxial-cables.html">Coaxial Cables</a>
-      <a href="cctv-cable.html">CCTV Cables</a>
-      <a href="rf-connectors.html">RF Connectors</a>
-      <a href="antennas.html">Antennas</a>
-      <a href="cable-connectors.html">Cable Connectors</a>
-      <a href="connectors.html">Connectors</a>
-      <a href="poe-switches.html">PoE Switches</a>
-      <a href="cat-6-cable.html">Cat 6 Cable</a>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <a href="tel:7290830908">📞 7290830908</a>
-      <a href="mailto:jcicables@gmail.com">✉ jcicables@gmail.com</a>
-      <a href="contact.html">Send an Enquiry</a>
-      <br>
-      <p style="margin-top:8px;font-size:.78rem;">Mon – Sat, 10am – 6pm IST</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2024 J.C.I. Cables (India). All Rights Reserved.</span>
-    <span class="gst-tag">GST: 07AAFPJ7469P1ZX</span>
-  </div>
-</footer>
+            <div class="product-card">
+                <div class="product-image">📹</div>
+                <div class="product-info">
+                    <h3>CCTV Cables</h3>
+                    <p>Surveillance-grade shielded cables with connectors for security systems.</p>
+                    <a href="cctv-cable.html" class="product-link">Learn More →</a>
+                </div>
+            </div>
 
-<button id="wl-fab" class="empty" aria-label="Open enquiry list">
-  <span>🛒 Enquiry</span>
-  <span class="wl-count">0</span>
-</button>
-<div id="wl-overlay"></div>
-<div id="wl-panel" role="dialog" aria-label="Enquiry list">
-  <div class="wl-handle"></div>
-  <div class="wl-header">
-    <div>
-      <h3>📋 My Enquiry List</h3>
-      <div class="wl-header-sub">0 items selected</div>
-    </div>
-    <button class="wl-close" onclick="closePanel()" aria-label="Close">✕</button>
-  </div>
-  <div class="wl-items" id="wl-items">
-    <div class="wl-empty"><div class="wl-empty-icon">🛒</div>Your enquiry list is empty.<br>Browse products and click <strong>+ Add to Enquiry</strong></div>
-  </div>
-  <div class="wl-footer">
-    <button class="btn-wa" onclick="sendWA()"><span class="btn-wa-icon">📲</span> Send Enquiry via WhatsApp</button>
-    <button class="btn-clear" onclick="if(confirm('Clear all items?'))clearAll()">Clear All Items</button>
-  </div>
-</div>
+            <div class="product-card">
+                <div class="product-image">🌐</div>
+                <div class="product-info">
+                    <h3>Cat 6 Ethernet</h3>
+                    <p>High-speed networking cables for data centers and structured cabling.</p>
+                    <a href="cat-6-cable.html" class="product-link">Learn More →</a>
+                </div>
+            </div>
 
+            <div class="product-card">
+                <div class="product-image">📶</div>
+                <div class="product-info">
+                    <h3>Antennas</h3>
+                    <p>Indoor and outdoor antennas for wireless and broadcast applications.</p>
+                    <a href="antennas.html" class="product-link">Learn More →</a>
+                </div>
+            </div>
 
-<script>
-const WA='917290830908',STORE='jci_wishlist';
-function getWL(){return JSON.parse(localStorage.getItem(STORE)||'[]');}
-function saveWL(l){localStorage.setItem(STORE,JSON.stringify(l));}
-function addItem(name,price){let l=getWL();if(!l.find(i=>i.name===name)){l.push({name,price});saveWL(l);}refreshUI();}
-function removeItem(name){saveWL(getWL().filter(i=>i.name!==name));refreshUI();renderPanel();}
-function clearAll(){saveWL([]);refreshUI();renderPanel();}
-function refreshUI(){
-  const l=getWL(),fab=document.getElementById('wl-fab'),cnt=document.querySelector('#wl-fab .wl-count');
-  if(!cnt)return;
-  cnt.textContent=l.length;fab.classList.toggle('empty',l.length===0);
-  document.querySelectorAll('.btn-wishlist').forEach(btn=>{
-    const inList=l.find(i=>i.name===btn.dataset.name);
-    btn.classList.toggle('added',!!inList);
-    btn.textContent=inList?'✓ Added':'+ Add to Enquiry';
-  });
-}
-function renderPanel(){
-  const l=getWL(),cont=document.getElementById('wl-items');
-  if(!l.length){cont.innerHTML='<div class="wl-empty"><div class="wl-empty-icon">🛒</div>Your enquiry list is empty.<br>Browse products and click <strong>+ Add to Enquiry</strong></div>';return;}
-  const sub=document.querySelector('.wl-header-sub');
-  if(sub)sub.textContent=l.length+' item'+(l.length>1?'s':'')+' selected';
-  cont.innerHTML=l.map(i=>`<div class="wl-item"><span class="wl-item-name">${i.name}</span><button class="wl-remove" onclick="removeItem(${JSON.stringify(i.name)})" title="Remove">✕</button></div>`).join('');
-}
-function openPanel(){renderPanel();document.getElementById('wl-overlay').style.display='block';document.getElementById('wl-panel').classList.add('open');}
-function closePanel(){document.getElementById('wl-overlay').style.display='none';document.getElementById('wl-panel').classList.remove('open');}
-function sendWA(){
-  const l=getWL();if(!l.length){alert('Add some products first!');return;}
-  let msg='Hello JCI Cables (India)!%0A%0AI am interested in the following products:%0A%0A';
-  l.forEach((item,i)=>{msg+=`${i+1}. ${item.name}%0A`;});
-  msg+='%0AKindly share the latest price and availability. Thank you!';
-  window.open(`https://wa.me/${WA}?text=${msg}`,'_blank');
-}
-document.addEventListener('DOMContentLoaded',()=>{
-  refreshUI();
-  const fab=document.getElementById('wl-fab');
-  if(fab)fab.onclick=openPanel;
-  const ov=document.getElementById('wl-overlay');
-  if(ov)ov.onclick=closePanel;
-});
-</script>
+            <div class="product-card">
+                <div class="product-image">⚙️</div>
+                <div class="product-info">
+                    <h3>PoE Switches</h3>
+                    <p>Managed PoE switches for surveillance and IoT deployments.</p>
+                    <a href="poe-switches.html" class="product-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- FEATURES -->
+    <section class="section" id="features">
+        <h2 class="section-title">Why Choose <span>JCI Cables</span>?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">✓</div>
+                <h3>Quality Assured</h3>
+                <p>ISO certified manufacturing with rigorous quality control at every step of production.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Turnaround</h3>
+                <p>Quick delivery on bulk orders with flexible MOQ and customization options.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Competitive Pricing</h3>
+                <p>Best market rates without compromising on quality or performance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3>Technical Support</h3>
+                <p>Expert technical guidance and after-sales support for all products.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Pan-India Delivery</h3>
+                <p>Reliable shipping across India with tracking and insurance options.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Easy Ordering</h3>
+                <p>Quick quotations via WhatsApp, email, or direct call within 24 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h4>10K+</h4>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-item">
+                <h4>50+</h4>
+                <p>Product SKUs</p>
+            </div>
+            <div class="stat-item">
+                <h4>95%</h4>
+                <p>On-Time Delivery</p>
+            </div>
+            <div class="stat-item">
+                <h4>24/7</h4>
+                <p>Customer Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="contact">
+        <h2>Ready to Order?</h2>
+        <p>Get in touch with our team for quotes, samples, or technical specifications. We respond within 2 hours.</p>
+        <button class="whatsapp-btn">
+            💬 Chat on WhatsApp
+        </button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Certifications</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="coaxial-cables.html">Coaxial Cables</a></li>
+                    <li><a href="rf-connectors.html">RF Connectors</a></li>
+                    <li><a href="cctv-cable.html">CCTV Cables</a></li>
+                    <li><a href="cat-6-cable.html">Cat 6 Cables</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📍 New Delhi, India</li>
+                    <li>📞 +91 7290 830 908</li>
+                    <li>📧 info@jcicables.com</li>
+                    <li>💬 WhatsApp Friendly</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Certifications</h4>
+                <ul>
+                    <li>✓ GST Registered</li>
+                    <li>✓ ISO Certified</li>
+                    <li>✓ Quality Assured</li>
+                    <li>✓ Trusted by Industry</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 JCI Cables India. All rights reserved. | Premium Cable & Connector Manufacturing | New Delhi</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // WhatsApp button
+        document.querySelector('.whatsapp-btn').addEventListener('click', function () {
+            window.open('https://wa.me/917290830908?text=Hi%20JCI%20Cables%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20your%20products.', '_blank');
+        });
+    </script>
 </body>
 </html>
