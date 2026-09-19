@@ -36,6 +36,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jcicables.com/load-cell-cables.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jcicables.com/instrumentation-cables.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://jcicables.com/connectors.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -407,6 +417,41 @@
   </url>
   <url>
     <loc>https://jcicables.com/products/rg-6-coaxial-cable.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jcicables.com/products/4-core-shielded-load-cell-cable.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jcicables.com/products/6-core-load-cell-cable-sense-wires.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jcicables.com/products/braided-shielded-4-core-load-cell-cable-pur.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jcicables.com/products/single-pair-instrumentation-cable-unarmoured.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jcicables.com/products/multi-pair-instrumentation-cable-armoured.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jcicables.com/products/triad-instrumentation-cable-unarmoured.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jcicables.com/products/24-pair-instrumentation-cable-armoured.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
