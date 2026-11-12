@@ -199,44 +199,38 @@ footer{background:var(--navy);color:rgba(255,255,255,0.75);padding:48px 40px 24p
   }
 }
     </script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="site.css">
 </head>
 <body>
 
-<header>
-  <div class="header-top">
-    <a href="index.html" class="logo">
-      <div class="logo-icon">JCI</div>
-      <div class="logo-text">
-        <h1>J.C.I. Cables (India)</h1>
-        <span>Manufacturer &amp; Exporter · New Delhi</span>
-      </div>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <div class="header-contact">
-      <div><strong>📞 9350044165</strong></div>
-      <div>A-92, Wazirpur, New Delhi – 110052</div>
-      <div>GST: 07AAFPJ7469P1ZX</div>
+<div class="jh-top">
+  <span class="jh-top-left">Cable manufacturer &amp; supplier · Wazirpur, New Delhi · GST 07AAFPJ7469P1ZX</span>
+  <span class="jh-top-right"><a href="tel:9350044165">Call 9350044165</a><a href="https://wa.me/917290830908?text=Hello%20JCI%20Cables%2C%20I%20would%20like%20a%20quotation." target="_blank" rel="noopener">WhatsApp us</a></span>
+</div>
+<div class="jh-bar" role="banner">
+  <div class="jh-inner">
+    <a href="index.html" class="jh-logo" aria-label="JCI Cables (India) home"><span class="jh-mark">JCI</span><span><span class="jh-name">JCI Cables (India)</span><span class="jh-tag">CABLES &amp; CONNECTORS · SINCE 1996</span></span></a>
+    <button class="jh-toggle" id="jhToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="jh-collapse" id="jhCollapse" role="navigation" aria-label="Main">
+      <ul class="jh-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="jh-drop" id="jhDrop"><button class="jh-drop-btn" id="jhDropBtn" type="button" aria-expanded="false" aria-haspopup="true">Products <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3.5l3 3 3-3"/></svg></button>
+          <div class="jh-menu"><a href="coaxial-cables.html">Coaxial Cables</a><a href="cctv-cable.html">CCTV Cables</a><a href="cat-6-cable.html">Cat 6 / LAN Cables</a><a href="load-cell-cables.html">Load Cell Cables</a><a href="instrumentation-cables.html">Instrumentation Cables</a><a href="rf-connectors.html">RF Connectors</a><a href="cable-connectors.html">Cable Connectors</a><a href="connectors.html">Connectors</a><a href="antennas.html">Antennas</a><a href="poe-switches.html">PoE Switches</a><a class="jh-all" href="index.html#products">View all product categories →</a></div></li>
+        <li><a href="index.html#features">Why JCI</a></li>
+        <li><a href="contact.html" class="is-active">Contact</a></li>
+      </ul>
+      <div class="jh-search"><input type="search" id="jhSearchInput" placeholder="Search 110+ products…" autocomplete="off" aria-label="Search products"><div class="jh-results" id="jhSearchResults"></div></div>
+      <a href="contact.html" class="jh-cta">Get a Quote</a>
     </div>
   </div>
-  <nav id="navCollapse">
-    <ul><li class="nav-home"><a href="index.html">Home</a></li>
-<li><a href="coaxial-cables.html">Coaxial Cables</a></li>
-<li><a href="cctv-cable.html">CCTV Cables</a></li>
-<li><a href="rf-connectors.html">RF Connectors</a></li>
-<li><a href="antennas.html">Antennas</a></li>
-<li><a href="cable-connectors.html">Cable Connectors</a></li>
-<li><a href="connectors.html">Connectors</a></li>
-<li><a href="poe-switches.html">PoE Switches</a></li>
-<li><a href="cat-6-cable.html">CAT 6 Cable</a></li>
-</ul>
-  </nav>
-</header>
+</div>
 
 <section class="page-hero">
   <div class="hero-text">
     <div class="eyebrow">J.C.I. Cables (India)</div>
     <h2>Contact Us</h2>
-    <p>Get in touch for quotes, bulk orders, custom cable assemblies, or any product enquiry. We respond promptly.</p>
+    <p>Get in touch for quotes, bulk orders, custom cable assemblies, or any product enquiry. Send your requirement and we will reply with a quotation.</p>
   </div>
 </section>
 <section class="section">
@@ -255,7 +249,7 @@ footer{background:var(--navy);color:rgba(255,255,255,0.75);padding:48px 40px 24p
           <div style="width:44px;height:44px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">📞</div>
           <div>
             <div style="font-weight:700;color:var(--navy);"><a href="tel:9350044165" style="color:var(--gold);">9350044165</a></div>
-            <div style="color:#666;font-size:13px;">88% Response Rate · Call or WhatsApp</div>
+            <div style="color:#666;font-size:13px;">Call or WhatsApp · Mon – Sat, 10 AM – 7 PM</div>
           </div>
         </div>
         <div style="display:flex;gap:16px;align-items:flex-start;">
@@ -272,6 +266,13 @@ footer{background:var(--navy);color:rgba(255,255,255,0.75);padding:48px 40px 24p
             <div style="color:#666;font-size:13px;">Registered · Delhi, India</div>
           </div>
         </div>
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:44px;height:44px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">✉️</div>
+          <div>
+            <div style="font-weight:700;color:var(--navy);"><a href="mailto:ksjaiswal@jcicables.com" style="color:var(--gold);">ksjaiswal@jcicables.com</a></div>
+            <div style="color:#666;font-size:13px;">For quotations and bulk enquiries</div>
+          </div>
+        </div>
       </div>
 
       <div style="margin-top:36px;padding:24px;background:#f8f9fa;border-radius:8px;border-left:4px solid var(--gold);">
@@ -282,91 +283,78 @@ footer{background:var(--navy);color:rgba(255,255,255,0.75);padding:48px 40px 24p
 
     <div style="background:#f8f9fa;border-radius:12px;padding:32px;">
       <h2 style="font-size:22px;color:var(--navy);margin-bottom:6px;">Send Your Requirement</h2>
-      <p style="font-size:13px;color:#666;margin-bottom:24px;">Fill in the form and we'll get back to you with pricing.</p>
+      <p style="font-size:13px;color:#666;margin-bottom:24px;">Fill in the form and press Send. It opens WhatsApp with your enquiry ready to send to us.</p>
       <form onsubmit="handleForm(event)">
         <div style="display:flex;flex-direction:column;gap:16px;">
           <div>
             <label style="font-size:13px;font-weight:600;color:var(--navy);display:block;margin-bottom:6px;">Your Name *</label>
-            <input type="text" required placeholder="Full Name" style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#e8920a'" onblur="this.style.borderColor='#ddd'">
+            <input type="text" id="enqName" required placeholder="Full Name" style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#e8920a'" onblur="this.style.borderColor='#ddd'">
           </div>
           <div>
             <label style="font-size:13px;font-weight:600;color:var(--navy);display:block;margin-bottom:6px;">Phone / WhatsApp *</label>
-            <input type="tel" required placeholder="+91 XXXXX XXXXX" style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#e8920a'" onblur="this.style.borderColor='#ddd'">
+            <input type="tel" id="enqPhone" required placeholder="+91 XXXXX XXXXX" style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#e8920a'" onblur="this.style.borderColor='#ddd'">
           </div>
           <div>
             <label style="font-size:13px;font-weight:600;color:var(--navy);display:block;margin-bottom:6px;">Product / Category</label>
-            <select style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;outline:none;background:#fff;">
+            <select id="enqCat" style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;outline:none;background:#fff;">
               <option value="">Select a Category</option>
-              <option>Coaxial Cables</option><option>CCTV Cables</option><option>RF Connectors</option><option>Antennas</option><option>Cable Connectors</option><option>Connectors</option><option>PoE Switches</option><option>CAT 6 Cable</option>
+              <option>Coaxial Cables</option><option>CCTV Cables</option><option>Cat 6 / LAN Cables</option><option>Load Cell Cables</option><option>Instrumentation Cables</option><option>RF Connectors</option><option>Cable Connectors</option><option>Connectors</option><option>Antennas</option><option>PoE Switches</option><option>Custom / made-to-order cable</option>
             </select>
           </div>
           <div>
             <label style="font-size:13px;font-weight:600;color:var(--navy);display:block;margin-bottom:6px;">Your Requirement *</label>
-            <textarea required rows="5" placeholder="Describe your requirement, quantity, specifications..." style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;outline:none;resize:vertical;transition:border-color 0.2s;" onfocus="this.style.borderColor='#e8920a'" onblur="this.style.borderColor='#ddd'"></textarea>
+            <textarea id="enqMsg" required rows="5" placeholder="Describe your requirement, quantity, specifications..." style="width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:6px;font-size:14px;outline:none;resize:vertical;transition:border-color 0.2s;" onfocus="this.style.borderColor='#e8920a'" onblur="this.style.borderColor='#ddd'"></textarea>
           </div>
-          <button type="submit" class="btn-gold" style="width:100%;padding:13px;border:none;cursor:pointer;font-size:15px;border-radius:6px;">Send Enquiry →</button>
+          <button type="submit" class="btn-gold" style="width:100%;padding:13px;border:none;cursor:pointer;font-size:15px;border-radius:6px;">Send Enquiry on WhatsApp →</button>
         </div>
       </form>
-      <div id="form-success" style="display:none;text-align:center;padding:20px;color:green;font-weight:600;">✅ Thank you! We will contact you shortly.</div>
+      <div id="form-success" style="display:none;text-align:center;padding:20px;color:#1a2e4a;font-weight:600;line-height:1.7;">WhatsApp has opened with your enquiry. Press send there to reach us.<br><span style="font-weight:400;font-size:13px;color:#555;">No WhatsApp? Call 9350044165 or email <a href="mailto:ksjaiswal@jcicables.com" style="color:#b86f00;">ksjaiswal@jcicables.com</a>.</span></div>
     </div>
   </div>
 </section>
 <script>
-function handleForm(e){e.preventDefault();e.target.style.display='none';document.getElementById('form-success').style.display='block';}
+function handleForm(e){
+  e.preventDefault();
+  var v=function(id){return (document.getElementById(id).value||'').trim();};
+  var lines=['Hello JCI Cables (India)!','','Name: '+v('enqName'),'Phone: '+v('enqPhone')];
+  if(v('enqCat'))lines.push('Category: '+v('enqCat'));
+  lines.push('','Requirement:',v('enqMsg'));
+  window.open('https://wa.me/917290830908?text='+encodeURIComponent(lines.join('\n')),'_blank');
+  e.target.style.display='none';document.getElementById('form-success').style.display='block';
+}
 </script>
 
 <div class="contact-strip">
   <div>
-    <h3>Get a Quote Today</h3>
-    <p>Call us or send your requirement — we respond within 24 hours.</p>
+    <h3>Prefer to talk?</h3>
+    <p>Call 9350044165 or message us on WhatsApp, Mon – Sat, 10 AM – 7 PM.</p>
   </div>
-  <a href="contact.html" class="btn-white">Contact Us →</a>
+  <a href="https://wa.me/917290830908?text=Hello%20JCI%20Cables%2C%20I%20would%20like%20a%20quotation." target="_blank" rel="noopener" class="btn-white">WhatsApp Us →</a>
 </div>
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-        <div class="logo-icon" style="width:40px;height:40px;font-size:14px;">JCI</div>
-        <div style="color:#fff;font-size:18px;font-weight:700;">J.C.I. Cables (India)</div>
-      </div>
-      <p>Manufacturer and exporter of high-quality coaxial cables, RF connectors, CCTV cables, antennas, CAT6 cables, and PoE switches. Serving telecom, broadcast, security, and defence sectors since inception.</p>
+<div class="jf" role="contentinfo">
+  <div class="jf-grid">
+    <div>
+      <div class="jf-brand"><span class="jh-mark">JCI</span><strong>J.C.I. Cables (India)</strong></div>
+      <p>Manufacturer and supplier of coaxial, CCTV, LAN, load cell and instrumentation cables, with a full range of connectors, antennas and PoE switches. Based in Wazirpur Industrial Area, New Delhi, since 1996.</p>
+      <div class="jf-badges"><span class="jf-badge">GST 07AAFPJ7469P1ZX</span><span class="jf-badge">MSME Registered</span></div>
     </div>
-    <div class="footer-col">
-      <h4>Products</h4>
-      <ul><li><a href="coaxial-cables.html">Coaxial Cables</a></li>
-<li><a href="cctv-cable.html">CCTV Cables</a></li>
-<li><a href="rf-connectors.html">RF Connectors</a></li>
-<li><a href="antennas.html">Antennas</a></li>
-<li><a href="cable-connectors.html">Cable Connectors</a></li>
-<li><a href="connectors.html">Connectors</a></li>
-<li><a href="poe-switches.html">PoE Switches</a></li>
-<li><a href="cat-6-cable.html">CAT 6 Cable</a></li></ul>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html">Get a Quote</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <div class="footer-contact">
-        <p>👤 KS Jaiswal (Proprietor)</p>
-        <p>📞 9350044165</p>
-        <p>📍 A-92, Wazirpur, New Delhi - 110052, Delhi, India</p>
-        <p>🏭 GST: 07AAFPJ7469P1ZX</p>
-      </div>
-    </div>
+    <div><h4>Products</h4><ul class="jf-cols2"><li><a href="coaxial-cables.html">Coaxial Cables</a></li><li><a href="cctv-cable.html">CCTV Cables</a></li><li><a href="cat-6-cable.html">Cat 6 / LAN Cables</a></li><li><a href="load-cell-cables.html">Load Cell Cables</a></li><li><a href="instrumentation-cables.html">Instrumentation Cables</a></li><li><a href="rf-connectors.html">RF Connectors</a></li><li><a href="cable-connectors.html">Cable Connectors</a></li><li><a href="connectors.html">Connectors</a></li><li><a href="antennas.html">Antennas</a></li><li><a href="poe-switches.html">PoE Switches</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#products">All Products</a></li>
+      <li><a href="index.html#features">Why JCI</a></li>
+      <li><a href="contact.html">Contact &amp; Enquiry</a></li>
+    </ul></div>
+    <div class="jf-contact"><h4>Contact</h4><ul>
+      <li><span class="jf-lbl">Call</span><a href="tel:9350044165">+91 93500 44165</a></li>
+      <li><span class="jf-lbl">WhatsApp</span><a href="https://wa.me/917290830908?text=Hello%20JCI%20Cables%2C%20I%20would%20like%20a%20quotation." target="_blank" rel="noopener">+91 72908 30908</a></li>
+      <li><span class="jf-lbl">Email</span><a href="mailto:ksjaiswal@jcicables.com">ksjaiswal@jcicables.com</a></li>
+      <li><span class="jf-lbl">Address</span><span class="v">A-92, Wazirpur Industrial Area, New Delhi – 110052</span></li>
+      <li><span class="jf-lbl">Hours</span><span class="v">Mon – Sat, 10 AM – 7 PM IST</span></li>
+    </ul></div>
   </div>
-  <div class="footer-bottom">
-    <span>© 2024 J.C.I. Cables (India). All Rights Reserved.</span>
-    <span class="gst-badge">GST: 07AAFPJ7469P1ZX</span>
-    <span>Made in India 🇮🇳</span>
-  </div>
-</footer>
+  <div class="jf-bottom"><span>© 2026 J.C.I. Cables (India). All rights reserved.</span><span>Proprietor: K.S. Jaiswal · Made in India</span></div>
+</div>
 <script>
 document.querySelectorAll('.btn-quote').forEach(btn=>btn.addEventListener('click',()=>window.location.href='contact.html'));
 </script>
@@ -395,5 +383,6 @@ document.querySelectorAll('.btn-quote').forEach(btn=>btn.addEventListener('click
   });
 })();
 </script>
+<script src="site.js" defer></script>
 </body>
 </html>

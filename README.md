@@ -22,8 +22,11 @@ connectors.html Product category page
 load-cell-cables.html Product category page (added 2026-09-19)
 instrumentation-cables.html Product category page (added 2026-09-19)
 products/ Individual product detail pages (109 pages)
+site.css Shared header, footer and search styles (loaded on every page)
+site.js Shared header behaviour: mobile menu, Products dropdown, product search
+favicon.svg Site icon
 images/ Product images
-products-index.json Search index consumed by search.js — update when adding/removing a product
+products-index.json Search index consumed by site.js — update when adding/removing a product
 sitemap.xml Sitemap for search engines & AI crawlers — update when adding/removing a page
 robots.txt Crawler rules (standard + AI/answer-engine bots)
 ```
@@ -31,6 +34,23 @@ robots.txt Crawler rules (standard + AI/answer-engine bots)
 ### `-v2` pages
 
 Files suffixed `-v2` (e.g. `index-v2.html`, `coaxial-cables-v2.html`) are redesigned versions of the corresponding page, built to a consistent schema: hero → key specs → full product catalog (with images, prices, and an "Add to Enquiry" button) → why-choose-us → common applications → CTA. They exist alongside the live pages and are **not yet linked into navigation** — nothing changes on the live site until a `-v2` file is promoted to replace its original (e.g. renaming `index-v2.html` → `index.html`).
+
+## Shared header and footer (added 2026-11-12)
+
+Every live page (homepage, contact, 10 category pages, 109 product pages) carries the same header and footer markup, styled by `site.css` and driven by `site.js`. Classes are prefixed `jh-` (header) and `jf-` (footer) so they never collide with the older per-page inline styles.
+
+- Header: top strip (GST, call, WhatsApp), logo, Home / Products dropdown (all 10 categories) / Why JCI / Contact, product search, "Get a Quote" button. Collapses to a hamburger menu below 1060px.
+- Footer: all 10 categories, company links, call / WhatsApp / email / address / hours, GST and MSME badges.
+- Search works on every page, including product pages (it resolves paths from the location of `site.js`). It matches all typed words against product name and category, and supports arrow keys and Enter.
+- To change the header or footer, edit the markup on every page with a script (see `header()` / `footer()` in the project notes), not by hand on one page. Adding a category means adding it to that list, the homepage grid, `sitemap.xml` and `products-index.json`.
+- `search.js` is the old search script and is no longer referenced by any live page.
+
+## Contact details and claims (single source of truth)
+
+- Email: ksjaiswal@jcicables.com
+- Hours: Mon to Sat, 10 AM to 7 PM IST
+- The contact form does not post to a server. On submit it opens WhatsApp with the enquiry pre-filled.
+- Only state what is true: established 1996, GST registered, MSME registered. Do not add ISO or ISI certification claims, customer counts, delivery percentages or 24/7 support.
 
 ## Enquiry cart
 
@@ -43,7 +63,7 @@ Product cards use a shared "Add to Enquiry" widget (bottom-right floating button
 
 Every page carries a canonical tag, Open Graph + Twitter Card meta tags, and JSON-LD structured data (`Organization`/`WebSite`/`FAQPage` on the homepage, `BreadcrumbList`+`CollectionPage` on category pages, `Product`+`BreadcrumbList` on product pages). `robots.txt` and `sitemap.xml` at the site root explicitly allow standard and AI/answer-engine crawlers (GPTBot, ClaudeBot, PerplexityBot, etc.).
 
-**When adding or removing a page, update:** `sitemap.xml`, `products-index.json` (if it's a product), and the `.nav-links` list on product detail pages (category/index/contact pages use a simpler 3-link nav and don't need this).
+**When adding or removing a page, update:** `sitemap.xml`, `products-index.json` (if it's a product), and the shared header and footer category lists on every page.
 
 ## Product categories
 

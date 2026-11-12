@@ -816,30 +816,32 @@
   }
 }
     </script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="site.css">
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <div class="logo-mark">⚡</div>
-                <span>JCI Cables</span>
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-            <div class="nav-collapse" id="navCollapse">
-                <ul class="nav-links">
-                    <li><a href="index.html#products">All Products</a></li>
-                    <li><a href="index.html#features">Why Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="site-search-wrap" id="siteSearchWrap">
-                    <input type="text" id="siteSearchInput" placeholder="Search products..." autocomplete="off">
-                    <div class="site-search-results" id="siteSearchResults"></div>
-                </div>
-                <a href="index.html" class="back-link">← Back to Home</a>
-            </div>
-        </nav>
-    </header>
+    <div class="jh-top">
+  <span class="jh-top-left">Cable manufacturer &amp; supplier · Wazirpur, New Delhi · GST 07AAFPJ7469P1ZX</span>
+  <span class="jh-top-right"><a href="tel:9350044165">Call 9350044165</a><a href="https://wa.me/917290830908?text=Hello%20JCI%20Cables%2C%20I%20would%20like%20a%20quotation." target="_blank" rel="noopener">WhatsApp us</a></span>
+</div>
+<div class="jh-bar" role="banner">
+  <div class="jh-inner">
+    <a href="index.html" class="jh-logo" aria-label="JCI Cables (India) home"><span class="jh-mark">JCI</span><span><span class="jh-name">JCI Cables (India)</span><span class="jh-tag">CABLES &amp; CONNECTORS · SINCE 1996</span></span></a>
+    <button class="jh-toggle" id="jhToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="jh-collapse" id="jhCollapse" role="navigation" aria-label="Main">
+      <ul class="jh-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="jh-drop is-active" id="jhDrop"><button class="jh-drop-btn" id="jhDropBtn" type="button" aria-expanded="false" aria-haspopup="true">Products <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3.5l3 3 3-3"/></svg></button>
+          <div class="jh-menu"><a href="coaxial-cables.html">Coaxial Cables</a><a href="cctv-cable.html">CCTV Cables</a><a href="cat-6-cable.html">Cat 6 / LAN Cables</a><a href="load-cell-cables.html">Load Cell Cables</a><a href="instrumentation-cables.html">Instrumentation Cables</a><a href="rf-connectors.html">RF Connectors</a><a href="cable-connectors.html" class="is-current">Cable Connectors</a><a href="connectors.html">Connectors</a><a href="antennas.html">Antennas</a><a href="poe-switches.html">PoE Switches</a><a class="jh-all" href="index.html#products">View all product categories →</a></div></li>
+        <li><a href="index.html#features">Why JCI</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="jh-search"><input type="search" id="jhSearchInput" placeholder="Search 110+ products…" autocomplete="off" aria-label="Search products"><div class="jh-results" id="jhSearchResults"></div></div>
+      <a href="contact.html" class="jh-cta">Get a Quote</a>
+    </div>
+  </div>
+</div>
 
     <!-- BREADCRUMB -->
     <div class="breadcrumb">
@@ -887,7 +889,7 @@
             <h2>Key <span>Specifications</span></h2>
             <div class="specs-grid">
                 <div class="spec-card">
-                    <h3>🔩 Physical Properties</h3>
+                    <h3>Physical Properties</h3>
                     <div class="spec-label">Body Material</div>
                     <div class="spec-value">Brass / Copper Alloy</div>
                     <div class="spec-label">Plating</div>
@@ -897,7 +899,7 @@
                 </div>
 
                 <div class="spec-card">
-                    <h3>⚡ Electrical Properties</h3>
+                    <h3>Electrical Properties</h3>
                     <div class="spec-label">Impedance</div>
                     <div class="spec-value">50Ω / 75Ω</div>
                     <div class="spec-label">Frequency Range</div>
@@ -907,7 +909,7 @@
                 </div>
 
                 <div class="spec-card">
-                    <h3>🛠️ Termination</h3>
+                    <h3>Termination</h3>
                     <div class="spec-label">Termination Type</div>
                     <div class="spec-value">Crimp / Twist-On / Compression</div>
                     <div class="spec-label">Mating Cycles</div>
@@ -917,7 +919,7 @@
                 </div>
 
                 <div class="spec-card">
-                    <h3>🌡️ Environmental</h3>
+                    <h3>Environmental</h3>
                     <div class="spec-label">Operating Temperature</div>
                     <div class="spec-value">-40°C to +85°C</div>
                     <div class="spec-label">Corrosion Resistance</div>
@@ -1126,19 +1128,19 @@
             <h2>Common <span>Applications</span></h2>
             <div class="specs-grid">
                 <div class="spec-card">
-                    <h3>📹 CCTV Termination</h3>
+                    <h3>CCTV Termination</h3>
                     <p>Connector solutions for surveillance cable runs.</p>
                 </div>
                 <div class="spec-card">
-                    <h3>🌐 Networking</h3>
+                    <h3>Networking</h3>
                     <p>RJ45 termination for structured LAN cabling.</p>
                 </div>
                 <div class="spec-card">
-                    <h3>📡 RF Systems</h3>
+                    <h3>RF Systems</h3>
                     <p>BNC/N-Type/SMA termination for RF signal chains.</p>
                 </div>
                 <div class="spec-card">
-                    <h3>🔧 Field Installation</h3>
+                    <h3>Field Installation</h3>
                     <p>Quick-fit connectors for on-site cable work.</p>
                 </div>
             </div>
@@ -1149,17 +1151,37 @@
             <h3>Ready to Order Cable Connectors?</h3>
             <p>Get custom quotes for your exact specifications. Free technical consultation available.</p>
             <div class="cta-buttons">
-                <button class="btn-primary" onclick="window.open('https://wa.me/917290830908?text=I%27m%20interested%20in%20cable%20connectors.%20Can%20you%20provide%20a%20quote%3F', '_blank')">💬 WhatsApp Us</button>
+                <button class="btn-primary" onclick="window.open('https://wa.me/917290830908?text=I%27m%20interested%20in%20cable%20connectors.%20Can%20you%20provide%20a%20quote%3F', '_blank')">WhatsApp Us for a Quote</button>
 
             </div>
         </section>
     </div>
 
     <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2024 JCI Cables India | Premium Cable & Connector Manufacturing | New Delhi</p>
-        <p style="margin-top: 10px;">GST Registered | ISO Certified | 24/7 Support | <a href="contact.html">Contact Us</a></p>
-    </footer>
+    <div class="jf" role="contentinfo">
+  <div class="jf-grid">
+    <div>
+      <div class="jf-brand"><span class="jh-mark">JCI</span><strong>J.C.I. Cables (India)</strong></div>
+      <p>Manufacturer and supplier of coaxial, CCTV, LAN, load cell and instrumentation cables, with a full range of connectors, antennas and PoE switches. Based in Wazirpur Industrial Area, New Delhi, since 1996.</p>
+      <div class="jf-badges"><span class="jf-badge">GST 07AAFPJ7469P1ZX</span><span class="jf-badge">MSME Registered</span></div>
+    </div>
+    <div><h4>Products</h4><ul class="jf-cols2"><li><a href="coaxial-cables.html">Coaxial Cables</a></li><li><a href="cctv-cable.html">CCTV Cables</a></li><li><a href="cat-6-cable.html">Cat 6 / LAN Cables</a></li><li><a href="load-cell-cables.html">Load Cell Cables</a></li><li><a href="instrumentation-cables.html">Instrumentation Cables</a></li><li><a href="rf-connectors.html">RF Connectors</a></li><li><a href="cable-connectors.html">Cable Connectors</a></li><li><a href="connectors.html">Connectors</a></li><li><a href="antennas.html">Antennas</a></li><li><a href="poe-switches.html">PoE Switches</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#products">All Products</a></li>
+      <li><a href="index.html#features">Why JCI</a></li>
+      <li><a href="contact.html">Contact &amp; Enquiry</a></li>
+    </ul></div>
+    <div class="jf-contact"><h4>Contact</h4><ul>
+      <li><span class="jf-lbl">Call</span><a href="tel:9350044165">+91 93500 44165</a></li>
+      <li><span class="jf-lbl">WhatsApp</span><a href="https://wa.me/917290830908?text=Hello%20JCI%20Cables%2C%20I%20would%20like%20a%20quotation." target="_blank" rel="noopener">+91 72908 30908</a></li>
+      <li><span class="jf-lbl">Email</span><a href="mailto:ksjaiswal@jcicables.com">ksjaiswal@jcicables.com</a></li>
+      <li><span class="jf-lbl">Address</span><span class="v">A-92, Wazirpur Industrial Area, New Delhi – 110052</span></li>
+      <li><span class="jf-lbl">Hours</span><span class="v">Mon – Sat, 10 AM – 7 PM IST</span></li>
+    </ul></div>
+  </div>
+  <div class="jf-bottom"><span>© 2026 J.C.I. Cables (India). All rights reserved.</span><span>Proprietor: K.S. Jaiswal · Made in India</span></div>
+</div>
 
     <button id="wl-fab" class="empty" aria-label="Open enquiry list">
         <span>🛒 Enquiry</span>
@@ -1224,6 +1246,6 @@
             document.getElementById('wl-overlay').addEventListener('click',closePanel);
         });
     </script>
-    <script src="search.js" defer></script>
+<script src="site.js" defer></script>
 </body>
 </html>
